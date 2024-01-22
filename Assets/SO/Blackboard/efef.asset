@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8957896864700617697
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e6d6bb86eb47af90984289322c8d0b, type: 3}
+  m_Name: itemDB-be2ab4ab963e5f640b25353117b8ac35
+  m_EditorClassIdentifier: 
+  id: be2ab4ab963e5f640b25353117b8ac35
+  groupsList:
+  - {fileID: 6732104559351736253}
+  groupsDic:
+    _serializedList:
+    - Key: 39d4348ec10df5c41b4a55ca14616aee
+      Value: {fileID: 6732104559351736253}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa9a0ff0d4cb44fb8bc9caed3161a4, type: 3}
+  m_Name: efef
+  m_EditorClassIdentifier: 
+  id: 1cbf5b2a2aff5d744b4a8699aa6891ac
+  blackboardName: efef
+  factDataBase: {fileID: 8847622790416734446}
+  actorDataBase: {fileID: 5548570775519133283}
+  itemDataBase: {fileID: -8957896864700617697}
+--- !u!114 &4252623372340955494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde03580dbb844bba26f148065297af1, type: 3}
+  m_Name: factGroup-173be753c9810774692150e480cfe41e
+  m_EditorClassIdentifier: 
+  id: 173be753c9810774692150e480cfe41e
+  groupName: Facts
+  elementsList: []
+  elementsDic:
+    _serializedList: []
+--- !u!114 &4541256092324690583
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f81db660fd42698e33c494ee73a4a7, type: 3}
+  m_Name: actorGroup-f27e93a9273013c4fb4d10e2e093f112
+  m_EditorClassIdentifier: 
+  id: f27e93a9273013c4fb4d10e2e093f112
+  groupName: Actors
+  elementsList: []
+  elementsDic:
+    _serializedList: []
+--- !u!114 &5548570775519133283
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d635d7733047b4a663141156d83872, type: 3}
+  m_Name: actorDB-bf1765a27064a9243b5d055058d8a50e
+  m_EditorClassIdentifier: 
+  id: bf1765a27064a9243b5d055058d8a50e
+  groupsList:
+  - {fileID: 4541256092324690583}
+  groupsDic:
+    _serializedList:
+    - Key: f27e93a9273013c4fb4d10e2e093f112
+      Value: {fileID: 4541256092324690583}
+--- !u!114 &6732104559351736253
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb3918843bc4f199a61baee63705883, type: 3}
+  m_Name: itemGroup-39d4348ec10df5c41b4a55ca14616aee
+  m_EditorClassIdentifier: 
+  id: 39d4348ec10df5c41b4a55ca14616aee
+  groupName: Items
+  elementsList: []
+  elementsDic:
+    _serializedList: []
+--- !u!114 &8847622790416734446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fece148c934082af81eabd37eb0685, type: 3}
+  m_Name: factDB-3082fb986c6d32d459d4ccdc8577d929
+  m_EditorClassIdentifier: 
+  id: 3082fb986c6d32d459d4ccdc8577d929
+  groupsList:
+  - {fileID: 4252623372340955494}
+  groupsDic:
+    _serializedList:
+    - Key: 173be753c9810774692150e480cfe41e
+      Value: {fileID: 4252623372340955494}
