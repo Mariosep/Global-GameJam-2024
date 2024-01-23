@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: DialogNode-f863ee3611196ed49972c556d036d9c0
   m_EditorClassIdentifier: 
   guid: f863ee3611196ed49972c556d036d9c0
-  position: {x: 208.80975, y: 161.60002}
+  position: {x: 208.79999, y: 161.59999}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: DialogNode-12149131ffc068a4ca491a707d48d89d
   m_EditorClassIdentifier: 
   guid: 12149131ffc068a4ca491a707d48d89d
-  position: {x: 507.20007, y: 147.20001}
+  position: {x: 507.2, y: 147.19998}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: DialogNode-f9936559bed625647b7b7f313114bd7e
   m_EditorClassIdentifier: 
   guid: f9936559bed625647b7b7f313114bd7e
-  position: {x: 805.6, y: 161.59987}
+  position: {x: 805.6, y: 161.59999}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
