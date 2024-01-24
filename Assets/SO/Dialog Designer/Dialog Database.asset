@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9040192209017531693
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755900283b136124d8ad835b2dc923bc, type: 3}
+  m_Name: Actor
+  m_EditorClassIdentifier: 
+  guid: 89c2e320f369d814b971782a5065b07d
+  actorImage: {fileID: 21300000, guid: be92947275676224b9548eccb922b38c, type: 3}
+  fullName: Pedro
+  description: defaultDesc
+  bgColor: {r: 0, g: 0.96862745, b: 0.012726343, a: 1}
 --- !u!114 &-7887207768043423177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +34,36 @@ MonoBehaviour:
   originNode: {fileID: 2047769187364535129}
   targetNodes:
   - {fileID: 7283512665864055782}
+--- !u!114 &-7836196224690437101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-013c15ad698808846b0b30619d0b7587
+  m_EditorClassIdentifier: 
+  id: 013c15ad698808846b0b30619d0b7587
+  commands: []
+--- !u!114 &-7492838343863454063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-5772f88e4809163439f2dbd9bd95e76a
+  m_EditorClassIdentifier: 
+  id: 5772f88e4809163439f2dbd9bd95e76a
+  portName: 
+  originNode: {fileID: 493826973324234131}
+  targetNodes: []
 --- !u!114 &-7112133113917640917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,7 +77,7 @@ MonoBehaviour:
   m_Name: CompleteNode-0e3ec78b4e269a54a9c79c65dfd5b4c9
   m_EditorClassIdentifier: 
   guid: 0e3ec78b4e269a54a9c79c65dfd5b4c9
-  position: {x: 1000, y: 200}
+  position: {x: 1473.8441, y: 199.99997}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -53,6 +100,36 @@ MonoBehaviour:
   originNode: {fileID: 7200161077957333718}
   targetNodes:
   - {fileID: 2047769187364535129}
+--- !u!114 &-5275185824349612478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-4203a2fa80e674249a2788d158645832
+  m_EditorClassIdentifier: 
+  id: 4203a2fa80e674249a2788d158645832
+  commands: []
+--- !u!114 &-4674562379252375737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-b19fc389637e7dc4c9ebc037fa80e1fd
+  m_EditorClassIdentifier: 
+  id: b19fc389637e7dc4c9ebc037fa80e1fd
+  portName: 
+  originNode: {fileID: 493826973324234131}
+  targetNodes: []
 --- !u!114 &-4081740923985002869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +163,20 @@ MonoBehaviour:
   groups: []
   conversations:
   - {fileID: -606996428101015881}
+--- !u!114 &-3439466088539981691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-4203a2fa80e674249a2788d158645832
+  m_EditorClassIdentifier: 
+  id: 4203a2fa80e674249a2788d158645832
+  conditions: []
 --- !u!114 &-3315854101807660857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +242,9 @@ MonoBehaviour:
   - {fileID: -7112133113917640917}
   - {fileID: 2047769187364535129}
   - {fileID: 7283512665864055782}
+  - {fileID: 493826973324234131}
+  - {fileID: 0}
+  - {fileID: 8751248880047485490}
   groups: []
   bookmarks: []
   runningNode: {fileID: 0}
@@ -177,6 +271,48 @@ MonoBehaviour:
   - {fileID: -3912596542660972213}
   actors:
   - {fileID: 2244073290506793033}
+  - {fileID: -9040192209017531693}
+--- !u!114 &126087922785764342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-5d2eed480e7c96e4b9aa63c33075a713
+  m_EditorClassIdentifier: 
+  id: 5d2eed480e7c96e4b9aa63c33075a713
+  portName: 
+  originNode: {fileID: 8751248880047485490}
+  targetNodes: []
+--- !u!114 &493826973324234131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-013c15ad698808846b0b30619d0b7587
+  m_EditorClassIdentifier: 
+  guid: 013c15ad698808846b0b30619d0b7587
+  position: {x: 809.60004, y: 161.6}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: -7492838343863454063}
+  outputPorts:
+  - {fileID: -4674562379252375737}
+  actor: {fileID: -9040192209017531693}
+  message: Hola que tal
+  delayTime: 3
+  requirements: {fileID: 2679684940180186688}
+  actionList: {fileID: -7836196224690437101}
 --- !u!114 &1495843505856139706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +369,36 @@ MonoBehaviour:
   fullName: Tusilini
   description: defaultDesc
   bgColor: {r: 0.26777497, g: 0.40288356, b: 0.5396226, a: 1}
+--- !u!114 &2679684940180186688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-013c15ad698808846b0b30619d0b7587
+  m_EditorClassIdentifier: 
+  id: 013c15ad698808846b0b30619d0b7587
+  conditions: []
+--- !u!114 &4610161836623200927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-e75783a169f85e34499032d89cba0574
+  m_EditorClassIdentifier: 
+  id: e75783a169f85e34499032d89cba0574
+  portName: 
+  originNode: {fileID: 8751248880047485490}
+  targetNodes: []
 --- !u!114 &4624168833104206901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +415,7 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: 7283512665864055782}
   targetNodes:
-  - {fileID: -7112133113917640917}
+  - {fileID: 493826973324234131}
 --- !u!114 &7200161077957333718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +448,7 @@ MonoBehaviour:
   m_Name: DialogNode-6ca7862e49b31f042aab9a5ef1171fa3
   m_EditorClassIdentifier: 
   guid: 6ca7862e49b31f042aab9a5ef1171fa3
-  position: {x: 547.39557, y: 161.6}
+  position: {x: 511.2, y: 161.6}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -324,6 +490,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: a310bd5011b897749a43421ab3f12bef
   commands: []
+--- !u!114 &8751248880047485490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-4203a2fa80e674249a2788d158645832
+  m_EditorClassIdentifier: 
+  guid: 4203a2fa80e674249a2788d158645832
+  position: {x: 1272.7867, y: 289.63544}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: 126087922785764342}
+  outputPorts:
+  - {fileID: 4610161836623200927}
+  actor: {fileID: 2244073290506793033}
+  message: 
+  delayTime: 0
+  requirements: {fileID: -3439466088539981691}
+  actionList: {fileID: -5275185824349612478}
 --- !u!114 &8965893103542920802
 MonoBehaviour:
   m_ObjectHideFlags: 0
