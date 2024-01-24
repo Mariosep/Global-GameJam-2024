@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CursorHandler : MonoBehaviour
@@ -24,19 +25,27 @@ public class CursorHandler : MonoBehaviour
         InteractionChannel.onImageReleased -= OnImageReleased;
     }
 
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            _audioSource.clip = clickSound;
+            _audioSource.Play();
+        }    
+        else if(Input.GetMouseButtonUp(0))
+        {
+            _audioSource.clip = releaseSound;
+            _audioSource.Play();
+        }
+    }
+
     private void OnImageReleased(Movable imageReleased)
     {
         Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
-        
-        _audioSource.clip = releaseSound;
-        _audioSource.Play();
     }
 
     private void OnImageGrabbed(Movable imageGrabbed)
     {
         Cursor.SetCursor(grabCursor, Vector2.zero, CursorMode.Auto);
-
-        _audioSource.clip = clickSound;
-        _audioSource.Play();
     }
 }
