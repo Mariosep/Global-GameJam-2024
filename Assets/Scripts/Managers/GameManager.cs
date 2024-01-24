@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,10 +16,10 @@ public class GameManager : MonoBehaviour
 
     private void StartNextRound()
     {
-        currentRound = new Round(rounds[roundIndex]);
+        currentRound = new Round(rounds[roundIndex], roundIndex + 1);
         currentRound.onRoundCompleted += OnRoundCompleted;
 
-        Debug.Log($"Round {roundIndex} started");
+        Debug.Log($"Round {currentRound.roundNumber} started");
 
         StartCoroutine(currentRound.Start());
 
@@ -30,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private void OnRoundCompleted()
     {
-        Debug.Log($"Round {roundIndex} completed");
+        Debug.Log($"Round {currentRound.roundNumber} completed");
 
         if (roundIndex < rounds.Count)
         {
@@ -40,31 +38,5 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("The End");
         }
-    }
-}
-
-public class Round
-{
-    public Action onRoundCompleted;
-    
-    public RoundData roundData;
-
-    public enum RoundState
-    {
-        Pending,
-        InProgress,
-        Completed
-    }
-
-    public Round(RoundData roundData)
-    {
-        this.roundData = roundData;
-    }
-
-    public IEnumerator Start()
-    {
-        yield return new WaitForSeconds(roundData.roundTime);
-        
-        onRoundCompleted?.Invoke();
     }
 }

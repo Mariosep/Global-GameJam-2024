@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668a9636768b4769b58e6910ef2f55e3, type: 3}
   m_Name: Round1
   m_EditorClassIdentifier: 
-  accessoriesList: []
+  accessoriesCollectionData: {fileID: 11400000, guid: 9a4bfa80b03110c43bc9f99e2d2a865b, type: 2}
   baseImage: {fileID: 8372191055008664806, guid: dcb9b1c6dc7e00b418f80de29678711c, type: 3}
-  roundTime: 2
+  roundTime: 20
