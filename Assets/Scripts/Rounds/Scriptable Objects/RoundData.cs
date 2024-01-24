@@ -1,10 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "RoundData", fileName = "RoundData")]
 public class RoundData : ScriptableObject
 {
-    public List<GameObject> accessoriesList = new List<GameObject>();
+    public AccessoriesCollectionData accessoriesCollectionData;
     public GameObject baseImage;
     public float roundTime;
 }
