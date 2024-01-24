@@ -13,8 +13,6 @@ public class ConversationUIListener : MonoBehaviour
     
     private void Awake()
     {
-        //_dialogUIContainer = dialogUIGo.GetComponent<DialogUIContainer>();
-        //_dialogCanvasGroup = dialogUIGo.GetComponent<CanvasGroup>();
         DialogSystemController.onShowNewDialog += ShowDialogNode;
     }
     
@@ -24,8 +22,8 @@ public class ConversationUIListener : MonoBehaviour
         if (newDialog)
         {
             newDialog.transform.SetParent(panelContainer.transform,false);
-            newDialog.GetComponentInChildren<TextMeshProUGUI>().text = node.Actor.fullName+": "+node.Message;
-            newDialog.GetComponentInChildren<Image>().sprite = node.Actor.actorImage;
+            string hexColor = ColorUtility.ToHtmlStringRGBA(node.Actor.bgColor);
+            newDialog.GetComponentInChildren<TextMeshProUGUI>().text = "<color=#"+hexColor+">"+node.Actor.fullName+":</color> "+node.Message;
         }
     }
 
