@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Name: CompleteNode-0e3ec78b4e269a54a9c79c65dfd5b4c9
   m_EditorClassIdentifier: 
   guid: 0e3ec78b4e269a54a9c79c65dfd5b4c9
-  position: {x: 1473.8441, y: 199.99997}
+  position: {x: 1406.3998, y: 200.00003}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -129,7 +129,8 @@ MonoBehaviour:
   id: b19fc389637e7dc4c9ebc037fa80e1fd
   portName: 
   originNode: {fileID: 493826973324234131}
-  targetNodes: []
+  targetNodes:
+  - {fileID: 8751248880047485490}
 --- !u!114 &-4081740923985002869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +244,6 @@ MonoBehaviour:
   - {fileID: 2047769187364535129}
   - {fileID: 7283512665864055782}
   - {fileID: 493826973324234131}
-  - {fileID: 0}
   - {fileID: 8751248880047485490}
   groups: []
   bookmarks: []
@@ -398,7 +398,8 @@ MonoBehaviour:
   id: e75783a169f85e34499032d89cba0574
   portName: 
   originNode: {fileID: 8751248880047485490}
-  targetNodes: []
+  targetNodes:
+  - {fileID: -7112133113917640917}
 --- !u!114 &4624168833104206901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,16 +504,16 @@ MonoBehaviour:
   m_Name: DialogNode-4203a2fa80e674249a2788d158645832
   m_EditorClassIdentifier: 
   guid: 4203a2fa80e674249a2788d158645832
-  position: {x: 1272.7867, y: 289.63544}
+  position: {x: 1108, y: 147.2}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
   - {fileID: 126087922785764342}
   outputPorts:
   - {fileID: 4610161836623200927}
-  actor: {fileID: 2244073290506793033}
-  message: 
-  delayTime: 0
+  actor: {fileID: -9040192209017531693}
+  message: Comprate los artic antes que los noctua anda
+  delayTime: 2
   requirements: {fileID: -3439466088539981691}
   actionList: {fileID: -5275185824349612478}
 --- !u!114 &8965893103542920802
