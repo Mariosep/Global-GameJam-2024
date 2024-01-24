@@ -1,12 +1,15 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class MoveTool : MonoBehaviour
 {
+    private RectTransform _rectTransform;
+    
     [SerializeField] private Movable imageSelected;
     
     private void Awake()
     {
+        _rectTransform = GetComponent<RectTransform>();
+        
         InteractionChannel.onImageGrabbed += OnImageGrabbed;
         InteractionChannel.onImageReleased += OnImageReleased;
     }
@@ -25,8 +28,14 @@ public class MoveTool : MonoBehaviour
     {
         if (imageSelected)
         {
+            // Get the mouse position in screen space
             Vector3 mousePosition = Input.mousePosition;
-            imageSelected.SetPosition(mousePosition);
+
+            // Convert the screen space position to world space
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            worldPosition.z = 0;
+
+            imageSelected.SetPosition(worldPosition);
         }
     }
 }
