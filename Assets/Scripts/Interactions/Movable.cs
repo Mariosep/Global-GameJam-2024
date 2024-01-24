@@ -1,49 +1,38 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Movable : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPointerMoveHandler
+public class Movable : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
-    private RectTransform _rectTransform;
-
-    [SerializeField] private bool isSelected = false;
+    public RectTransform rectTransform;
 
     private Vector3 offsetWithMouse;
     
     private void Awake()
     {
-        _rectTransform = GetComponent<RectTransform>();
+        rectTransform = GetComponent<RectTransform>();
     }
 
     public void SetPosition(Vector3 newPosition)
     {
-        _rectTransform.position = newPosition - offsetWithMouse;
+        rectTransform.position = newPosition - offsetWithMouse;
     }
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        isSelected = true;
+        RectTransformUtility.ScreenPointToWorldPointInRectangle(rectTransform, eventData.position,
+            eventData.pressEventCamera, out Vector3 worldPoint);
         
-        CalculateOffsetWithMouse(eventData.position);
+        CalculateOffsetWithMouse(worldPoint);
         InteractionChannel.onImageGrabbed?.Invoke(this);   
-    }
-
-    public void OnPointerMove(PointerEventData eventData)
-    {
-        /*if(isSelected)
-        {
-            Debug.Log(eventData.position);
-            InteractionChannel.onImageMoved?.Invoke(this, eventData.position);
-        }*/
     }
     
     public void OnPointerUp(PointerEventData eventData)
     {
-        isSelected = false;
         InteractionChannel.onImageReleased?.Invoke(this);
     }
 
     private void CalculateOffsetWithMouse(Vector3 mousePosition)
     {
-        offsetWithMouse = mousePosition - _rectTransform.position;
+        offsetWithMouse = mousePosition - rectTransform.position;
     }
 }
