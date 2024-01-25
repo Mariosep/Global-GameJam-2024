@@ -7,6 +7,7 @@ public class RoundData : ScriptableObject
 {
     public AccessoriesCollectionData accessoriesCollectionData;
     public GameObject baseImage;
+    public List<GameObject> npcResults;
     public float roundTime;
     public ConversationTree conversation;
     public List<BackgroundData> backgrounds;

@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
-public class MoveTool : MonoBehaviour
+public class MoveTool : Singleton<MoveTool>
 {
-    private RectTransform _rectTransform;
+    public bool canMove;
     
+    private RectTransform _rectTransform;
     [SerializeField] private Movable imageSelected;
     
     private void Awake()
@@ -12,8 +14,27 @@ public class MoveTool : MonoBehaviour
         
         InteractionChannel.onImageGrabbed += OnImageGrabbed;
         InteractionChannel.onImageReleased += OnImageReleased;
+
+        RoundChannel.onDecorPhaseStarted += EnableMoveTool;
+        RoundChannel.onDecorPhaseCompleted += DisableMoveTool;
     }
 
+    private void OnDestroy()
+    {
+        InteractionChannel.onImageGrabbed -= OnImageGrabbed;
+        InteractionChannel.onImageReleased -= OnImageReleased;
+    }
+
+    private void EnableMoveTool()
+    {
+        canMove = true;
+    }
+    
+    private void DisableMoveTool()
+    {
+        canMove = false;
+    }
+    
     private void OnImageReleased(Movable obj)
     {
         imageSelected = null;
