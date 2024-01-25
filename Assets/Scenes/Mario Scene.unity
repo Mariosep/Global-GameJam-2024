@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &206322919 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3394813824410366061, guid: aa5ddaa816dcccc49b1516f69918ff7e, type: 3}
+  m_PrefabInstance: {fileID: 4412371483122151133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263521228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,9 +1994,17 @@ PrefabInstance:
       value: Viewport Window
       objectReference: {fileID: 0}
     - target: {fileID: 5500613444748796991, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1881052571}
+    - target: {fileID: 5500613444748796991, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
       propertyPath: viewportContainer
       value: 
       objectReference: {fileID: 4142111756703629866}
+    - target: {fileID: 5500613444748796991, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
+      propertyPath: accessoriesContainer
+      value: 
+      objectReference: {fileID: 206322919}
     - target: {fileID: 6427126399476999981, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2073,7 +2086,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1891754545910039185, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
+    - {fileID: 7423599606017306030, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0813124847757c5448e6a1baefe64cd2, type: 3}
