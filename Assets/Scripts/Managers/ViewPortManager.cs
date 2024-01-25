@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ViewPortManager : MonoBehaviour
+public class ViewPortManager : Singleton<ViewPortManager>
 {
     public Transform viewportContainer;
     
@@ -9,27 +9,28 @@ public class ViewPortManager : MonoBehaviour
     
     private void Awake()
     {
-        RoundChannel.onRoundStarted += OnRoundStarted;
-        RoundChannel.onRoundCompleted += OnRoundCompleted;
+        //RoundChannel.onRoundStarted += OnRoundStarted;
+        //RoundChannel.onRoundCompleted += OnRoundCompleted;
     }
 
     private void OnDisable()
     {
-        RoundChannel.onRoundStarted -= OnRoundStarted;
-        RoundChannel.onRoundCompleted -= OnRoundCompleted;
+        //RoundChannel.onRoundStarted -= OnRoundStarted;
+        //RoundChannel.onRoundCompleted -= OnRoundCompleted;
     }
-    
-    private void OnRoundStarted(Round roundStarted)
+
+    public void InstantiateBaseImage(GameObject baseImagePrefab)
     {
-        _roundData = roundStarted.RoundData;
-        
+        _baseImage = Instantiate(baseImagePrefab, transform);
+    }
+
+    public void DeleteBaseImage()
+    {
         if(_baseImage != null)
             Object.Destroy(_baseImage);
-        
-        _baseImage = Instantiate(_roundData.baseImage, transform);
     }
     
-    private void OnRoundCompleted(Round roundCompleted)
+    private void OnRoundCompleted(RoundController roundControllerCompleted)
     {
         
     }

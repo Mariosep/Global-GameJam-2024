@@ -11,20 +11,21 @@ public class AccessoriesManager : MonoBehaviour
     private void Awake()
     {
         RoundChannel.onRoundStarted += OnRoundStarted;
+        RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted += OnRoundCompleted;
 
         _accessoryList = new List<GameObject>();
     }
-
+    
     private void OnDisable()
     {
         RoundChannel.onRoundStarted -= OnRoundStarted;
         RoundChannel.onRoundCompleted -= OnRoundCompleted;
     }
     
-    private void OnRoundStarted(Round roundStarted)
+    private void OnRoundStarted(RoundController roundControllerStarted)
     {
-        _accessoriesCollectionData = roundStarted.RoundData.accessoriesCollectionData;
+        _accessoriesCollectionData = roundControllerStarted.roundData.accessoriesCollectionData;
 
         _accessoryList.ForEach(Destroy);
 
@@ -35,7 +36,12 @@ public class AccessoriesManager : MonoBehaviour
         }
     }
     
-    private void OnRoundCompleted(Round roundCompleted)
+    private void OnDecorPhaseCompleted()
+    {
+        
+    }
+    
+    private void OnRoundCompleted(RoundController roundControllerCompleted)
     {
         
     }

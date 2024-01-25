@@ -1,51 +1,81 @@
+using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoundTimerUI : MonoBehaviour
 {
-    private TextMeshProUGUI _timeText;
+    public Image timerImage;
+    public TextMeshProUGUI _timeText;
+    
     private AudioSource _audioSource;
-    private Round _currentRound;
 
+    private bool isRunning;
     private bool _tictacSoundIsPlaying = false;
     
     private void Awake()
     {
-        _timeText = GetComponent<TextMeshProUGUI>();
+        timerImage = GetComponent<Image>();
         _audioSource = GetComponent<AudioSource>();
-
-        RoundChannel.onRoundStarted += OnRoundStarted;
-        RoundChannel.onRoundCompleted += OnRoundCompleted;
     }
+
+    private void Start()
+    {
+        RoundChannel.onRoundStarted += OnRoundStarted;
+        RoundChannel.onDecorPhaseStarted += OnDecorPhaseStarted;
+        RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
+    }
+
 
     private void OnDisable()
     {
         RoundChannel.onRoundStarted -= OnRoundStarted;
-        RoundChannel.onRoundCompleted -= OnRoundCompleted;
+        RoundChannel.onDecorPhaseStarted -= OnDecorPhaseStarted;
+        RoundChannel.onDecorPhaseCompleted -= OnDecorPhaseCompleted;
     }
 
     private void Update()
     {
-        if (_currentRound != null)
+        if (isRunning)
         {
-            if(_currentRound.TimeLeft < 10 && !_tictacSoundIsPlaying)
+            if(DecorPhase.Instance.TimeLeft < 10 && !_tictacSoundIsPlaying)
             {
                 _audioSource.Play();
                 _tictacSoundIsPlaying = true;
             }
             
-            _timeText.SetText(_currentRound.TimeLeft.ToString());
+            _timeText.SetText(DecorPhase.Instance.TimeLeft.ToString());
         }
     }
 
-    private void OnRoundStarted(Round roundStarted)
+    private void Show()
     {
-        _currentRound = roundStarted;
+        timerImage.enabled = true;
+        _timeText.gameObject.SetActive(true);
+    }
+
+    private void Hide()
+    {
+        timerImage.enabled = false;
+        _timeText.gameObject.SetActive(false);
     }
     
-    private void OnRoundCompleted(Round roundCompleted)
+    private void OnRoundStarted(RoundController roundController)
+    {
+        Show();
+    }
+    
+    private void OnDecorPhaseStarted()
+    {
+        isRunning = true;
+    }
+    
+    private void OnDecorPhaseCompleted()
     {
         _tictacSoundIsPlaying = false;
         _audioSource.Stop();
+        isRunning = false;
+        
+        Hide();
     }
 }
