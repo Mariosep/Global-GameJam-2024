@@ -17,22 +17,24 @@ public class ConversationUIListener : MonoBehaviour
     private DSChoice _currentChoiceNode;
     private Coroutine _choiceCo;
     private bool _stopTimer;
+    private RectTransform _panelRectTransform;
     
     private void Awake()
     {
         DialogSystemController.onShowNewDialog += ShowDialogNode;
         DialogSystemController.onShowNewChoiceInTime += ShowChoiceNode;
+        _panelRectTransform = panelContainer.GetComponent<RectTransform>();
     }
     
     private void ShowDialogNode(DSDialog node)
     {
         DestroyAllChildren(responsePanel.transform);
-        GameObject newDialog = Instantiate(dialogPrefab);
+        GameObject newDialog = Instantiate(dialogPrefab,panelContainer.transform);
         if (newDialog)
         {
-            newDialog.transform.SetParent(panelContainer.transform,false);
             string hexColor = ColorUtility.ToHtmlStringRGBA(node.Actor.bgColor);
             newDialog.GetComponentInChildren<TextMeshProUGUI>().text = "<color=#"+hexColor+">"+node.Actor.fullName+":</color> "+node.Message;
+            LayoutRebuilder.MarkLayoutForRebuild(_panelRectTransform);
         }
     }
     
@@ -40,12 +42,12 @@ public class ConversationUIListener : MonoBehaviour
     {
         DestroyAllChildren(responsePanel.transform);
         _currentChoiceNode = node;
-        GameObject newChoice = Instantiate(dialogPrefab);
+        GameObject newChoice = Instantiate(dialogPrefab,panelContainer.transform);
         if (newChoice)
         {
-            newChoice.transform.SetParent(panelContainer.transform,false);
             string hexColor = ColorUtility.ToHtmlStringRGBA(node.Actor.bgColor);
             newChoice.GetComponentInChildren<TextMeshProUGUI>().text = "<color=#"+hexColor+">"+node.Actor.fullName+":</color> "+node.Message;
+            LayoutRebuilder.MarkLayoutForRebuild(_panelRectTransform);
             
             InstantiateChoices();
 
@@ -74,7 +76,6 @@ public class ConversationUIListener : MonoBehaviour
                 var saveIndex = i;
                 var choiceNode = _currentChoiceNode;
                 button.onClick.AddListener(delegate () {  OnChoiceSelected(choiceNode, saveIndex);});
-                //LayoutRebuilder.ForceRebuildLayoutImmediate(panelContainer.GetComponent<RectTransform>());
             }
         }
     }
