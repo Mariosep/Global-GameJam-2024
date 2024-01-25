@@ -17,15 +17,44 @@ public class RatePhase : Singleton<RatePhase>, IPhase
     public IEnumerator PrePhase()
     {
         yield return new WaitForSeconds(3f);
+        ViewPortManager.Instance.HidePlayerResult();
+
+        StartCoroutine(StartPhase());
     }
 
     public IEnumerator StartPhase()
     {
         yield return new WaitForSeconds(3f);
-    }
 
+        foreach (GameObject imageResult in roundData.npcResults)
+        {
+            ViewPortManager.Instance.HideNPCResult(imageResult);
+            ViewPortManager.Instance.ShowNPCResult(imageResult);
+            
+            RateUI.Instance.StartRate(_currentRoundController);
+
+            yield return new WaitForSeconds(5f);
+            
+            Debug.Log("Show rate result");
+            
+            yield return new WaitForSeconds(5f);
+        }
+        
+        ViewPortManager.Instance.ShowPlayerResult();
+        
+        yield return new WaitForSeconds(5f);
+        
+        Debug.Log("Show rate result");
+            
+        yield return new WaitForSeconds(5f);
+
+        StartCoroutine(PostPhase());
+    }
+    
     public IEnumerator PostPhase()
     {
         yield return new WaitForSeconds(3f);
+        
+        RoundChannel.onRatePhaseCompleted?.Invoke();
     }
 }

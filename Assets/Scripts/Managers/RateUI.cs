@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RateManager : Singleton<RateManager>
+public class RateUI : Singleton<RateUI>
 {
     public enum RateType
     {
@@ -12,7 +11,7 @@ public class RateManager : Singleton<RateManager>
         Funny
     }
 
-    public GameObject ratePanel;
+    public GameObject contentContainer;
     
     public Button pukeButton;
     public Button fineButton;
@@ -23,17 +22,14 @@ public class RateManager : Singleton<RateManager>
 
     private RoundController _currentRoundController;
 
-    private Animator _animator;
-    private static readonly int ShowPanel = Animator.StringToHash("ShowPanel");
-
     private void Awake()
     {
-         _animator = ratePanel.GetComponent<Animator>();
+        contentContainer = transform.GetChild(0).gameObject;
     }
 
     private void Start()
     {
-        ratePanel.SetActive(false);
+        contentContainer.SetActive(false);
         
         pukeButton.onClick.AddListener(() => OnRateButtonClicked(RateType.Puke));
         fineButton.onClick.AddListener(() => OnRateButtonClicked(RateType.Fine));
@@ -44,9 +40,9 @@ public class RateManager : Singleton<RateManager>
     {
         _currentRoundController = roundController;
         
-        ratePanel.SetActive(true);
+        contentContainer.SetActive(true);
         
-        _animator.SetBool(ShowPanel, true);
+        //_animator.SetBool(ShowPanel, true);
         
         RoundChannel.onRatePhaseStarted?.Invoke();
     }
@@ -57,12 +53,12 @@ public class RateManager : Singleton<RateManager>
         playerRating = rate;
         //CompleteRate();
         
-        _animator.SetBool(ShowPanel, false);
+        //_animator.SetBool(ShowPanel, false);
     }
 
     private void CompleteRate()
     {
-        ratePanel.SetActive(false);
+        contentContainer.SetActive(false);
         RoundChannel.onRatePhaseCompleted?.Invoke();
         _currentRoundController.Complete();
     }

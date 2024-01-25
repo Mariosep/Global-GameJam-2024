@@ -1,12 +1,13 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ViewPortManager : Singleton<ViewPortManager>, IDragHandler
+public class ViewPortManager : Singleton<ViewPortManager>
 {
-    public RectTransform viewportContainer;
+    public RectTransform playerResultContainer;
+    public RectTransform npcResultContainer;
+    
     public Transform accessoriesContainer;
-
+    
     private Bounds viewPortBounds;
     
     private RoundData _roundData;
@@ -16,22 +17,15 @@ public class ViewPortManager : Singleton<ViewPortManager>, IDragHandler
     
     private void Awake()
     {
-        //RoundChannel.onRoundStarted += OnRoundStarted;
-        //RoundChannel.onRoundCompleted += OnRoundCompleted;
         var viewPortImage = GetComponent<Image>();
         viewPortBounds = viewPortImage.sprite.bounds;
-        
-        RoundChannel.onDecorPhaseCompleted += HidePlayerDecorResult;
         
         InteractionChannel.onImageReleased += OnImageReleased;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
-        RoundChannel.onDecorPhaseCompleted -= HidePlayerDecorResult;
         InteractionChannel.onImageReleased -= OnImageReleased;
-        //RoundChannel.onRoundStarted -= OnRoundStarted;
-        //RoundChannel.onRoundCompleted -= OnRoundCompleted;
     }
 
     private void OnImageReleased(Movable imageReleased)
@@ -42,7 +36,7 @@ public class ViewPortManager : Singleton<ViewPortManager>, IDragHandler
         if (ImageIsInside(imagePosition))
         {
             Debug.Log("Image is inside the bounds!");
-            imageReleased.transform.SetParent(viewportContainer);
+            imageReleased.transform.SetParent(playerResultContainer);
         }
         else
         {
@@ -52,14 +46,30 @@ public class ViewPortManager : Singleton<ViewPortManager>, IDragHandler
 
     public void InstantiateBaseImage(GameObject baseImagePrefab)
     {
-        _baseImage = Instantiate(baseImagePrefab, viewportContainer.transform);
+        _baseImage = Instantiate(baseImagePrefab, playerResultContainer);
     }
 
-    private void HidePlayerDecorResult()
+    public void HidePlayerResult()
     {
-        viewportContainer.gameObject.SetActive(false);
+        playerResultContainer.gameObject.SetActive(false);
     }
     
+    public void ShowPlayerResult()
+    {
+        playerResultContainer.gameObject.SetActive(true);
+    }
+
+    public void ShowNPCResult(GameObject imageResult)
+    {
+         Instantiate(imageResult, npcResultContainer);
+    }
+    
+    public void HideNPCResult(GameObject imageResult)
+    {
+        if(npcResultContainer.childCount > 0)
+            Destroy(npcResultContainer.GetChild(0).gameObject); 
+    }
+
     public void DeleteBaseImage()
     {
         if(_baseImage != null)
@@ -73,11 +83,6 @@ public class ViewPortManager : Singleton<ViewPortManager>, IDragHandler
     
     bool ImageIsInside(Vector3 imagePosition)
     {
-        return viewportContainer.rect.Contains(imagePosition);
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        Debug.Log("Drag");
+        return playerResultContainer.rect.Contains(imagePosition);
     }
 }

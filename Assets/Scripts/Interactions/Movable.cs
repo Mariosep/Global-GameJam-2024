@@ -6,6 +6,7 @@ public class Movable : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public RectTransform rectTransform;
 
     private Vector3 offsetWithMouse;
+    private bool isSelected;
     
     private void Awake()
     {
@@ -19,16 +20,24 @@ public class Movable : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        RectTransformUtility.ScreenPointToWorldPointInRectangle(rectTransform, eventData.position,
-            eventData.pressEventCamera, out Vector3 worldPoint);
-        
-        CalculateOffsetWithMouse(worldPoint);
-        InteractionChannel.onImageGrabbed?.Invoke(this);   
+        if(MoveTool.Instance.canMove)
+        {
+            RectTransformUtility.ScreenPointToWorldPointInRectangle(rectTransform, eventData.position,
+                eventData.pressEventCamera, out Vector3 worldPoint);
+
+            CalculateOffsetWithMouse(worldPoint);
+            isSelected = true;
+            InteractionChannel.onImageGrabbed?.Invoke(this);
+        }   
     }
     
     public void OnPointerUp(PointerEventData eventData)
     {
-        InteractionChannel.onImageReleased?.Invoke(this);
+        if(isSelected)
+        {
+            InteractionChannel.onImageReleased?.Invoke(this);
+            isSelected = false;
+        }
     }
 
     private void CalculateOffsetWithMouse(Vector3 mousePosition)
