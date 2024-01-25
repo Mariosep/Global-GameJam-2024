@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AQM.Tools;
 using UnityEngine;
 
 public class Round
@@ -29,6 +30,10 @@ public class Round
     public IEnumerator Start()
     {
         RoundChannel.onRoundStarted?.Invoke(this);
+        if (RoundData.conversation)
+        {
+            DDEvents.onStartConversation?.Invoke(RoundData.conversation);
+        }
         
         float startTime = Time.time;
         float timePassed = 0;

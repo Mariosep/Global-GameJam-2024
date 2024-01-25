@@ -74,6 +74,7 @@ public class ConversationUIListener : MonoBehaviour
                 var saveIndex = i;
                 var choiceNode = _currentChoiceNode;
                 button.onClick.AddListener(delegate () {  OnChoiceSelected(choiceNode, saveIndex);});
+                //LayoutRebuilder.ForceRebuildLayoutImmediate(panelContainer.GetComponent<RectTransform>());
             }
         }
     }

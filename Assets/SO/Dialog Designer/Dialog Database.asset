@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9077976661494713135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-307d3830eb5ffd94989fa8ba1972afcb
+  m_EditorClassIdentifier: 
+  guid: 307d3830eb5ffd94989fa8ba1972afcb
+  position: {x: 1795.9583, y: 93.000015}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: 7923007317104360748}
+  outputPorts:
+  - {fileID: 951590606180826906}
+  actor: {fileID: 2244073290506793033}
+  message: Eres un hijo de puta
+  delayTime: 2
+  requirements: {fileID: 303768196730354527}
+  actionList: {fileID: -2422462250917073243}
 --- !u!114 &-9040192209017531693
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -338,6 +363,20 @@ MonoBehaviour:
   fullName: You
   description: defaultDesc
   bgColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &-2422462250917073243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-307d3830eb5ffd94989fa8ba1972afcb
+  m_EditorClassIdentifier: 
+  id: 307d3830eb5ffd94989fa8ba1972afcb
+  commands: []
 --- !u!114 &-2060883225914641093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +448,7 @@ MonoBehaviour:
   - {fileID: -3431113723574243109}
   - {fileID: -7149239453280696781}
   - {fileID: -5957683929426476691}
+  - {fileID: -9077976661494713135}
   groups: []
   bookmarks: []
   runningNode: {fileID: 0}
@@ -451,6 +491,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: cfae782605909944590e61fbb8eb7519
   commands: []
+--- !u!114 &303768196730354527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-307d3830eb5ffd94989fa8ba1972afcb
+  m_EditorClassIdentifier: 
+  id: 307d3830eb5ffd94989fa8ba1972afcb
+  conditions: []
 --- !u!114 &493826973324234131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +530,23 @@ MonoBehaviour:
   delayTime: 2
   requirements: {fileID: 2679684940180186688}
   actionList: {fileID: -7836196224690437101}
+--- !u!114 &951590606180826906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-15dff05cb3f27784b92ff7f82a87a9a8
+  m_EditorClassIdentifier: 
+  id: 15dff05cb3f27784b92ff7f82a87a9a8
+  portName: 
+  originNode: {fileID: -9077976661494713135}
+  targetNodes:
+  - {fileID: -7112133113917640917}
 --- !u!114 &1199836701072620898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +787,7 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: -7149239453280696781}
   targetNodes:
-  - {fileID: -7112133113917640917}
+  - {fileID: -9077976661494713135}
 --- !u!114 &7200161077957333718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,6 +862,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: a310bd5011b897749a43421ab3f12bef
   commands: []
+--- !u!114 &7923007317104360748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-67ff8df1f2640bc49a74f461bf80b1f1
+  m_EditorClassIdentifier: 
+  id: 67ff8df1f2640bc49a74f461bf80b1f1
+  portName: 
+  originNode: {fileID: -9077976661494713135}
+  targetNodes: []
 --- !u!114 &8957838260238169997
 MonoBehaviour:
   m_ObjectHideFlags: 0
