@@ -8,7 +8,7 @@
         "com.unity.inputsystem": "1.4.4",
         "com.mariosep.blackboard": "https://github.com/Mariosep/blackboard.git"
       },
-      "hash": "280836acfb78f370801b45162d24dd8ad329bd32"
+      "hash": "dfe2346e93118f9536ba305bb19c21e8a9208f52"
     },
     "com.mariosep.blackboard": {
       "version": "https://github.com/Mariosep/blackboard.git",
@@ -237,7 +237,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.6",
+      "version": "3.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
