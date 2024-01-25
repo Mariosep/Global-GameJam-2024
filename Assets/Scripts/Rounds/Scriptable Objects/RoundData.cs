@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AQM.Tools;
 using UnityEngine;
 
@@ -8,4 +9,5 @@ public class RoundData : ScriptableObject
     public GameObject baseImage;
     public float roundTime;
     public ConversationTree conversation;
+    public List<BackgroundData> backgrounds;
 }
