@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accessoriesCollectionData: {fileID: 11400000, guid: 9a4bfa80b03110c43bc9f99e2d2a865b, type: 2}
   baseImage: {fileID: 8372191055008664806, guid: dcb9b1c6dc7e00b418f80de29678711c, type: 3}
-  roundTime: 3
+  roundTime: 20
+  conversation: {fileID: -606996428101015881, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}

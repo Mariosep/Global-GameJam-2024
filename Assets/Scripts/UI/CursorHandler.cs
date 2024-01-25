@@ -9,10 +9,14 @@ public class CursorHandler : MonoBehaviour
 
     public AudioClip clickSound;
     public AudioClip releaseSound;
+
+    private Vector2 _hotspot;
     
     private void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
+        _hotspot = new Vector2(defaultCursor.height / 2f, 0);
+        Cursor.SetCursor(defaultCursor,_hotspot, CursorMode.Auto);
         
         InteractionChannel.onImageGrabbed += OnImageGrabbed;
         InteractionChannel.onImageReleased += OnImageReleased;
@@ -40,11 +44,11 @@ public class CursorHandler : MonoBehaviour
 
     private void OnImageReleased(Movable imageReleased)
     {
-        Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(defaultCursor,_hotspot, CursorMode.Auto);
     }
 
     private void OnImageGrabbed(Movable imageGrabbed)
     {
-        Cursor.SetCursor(grabCursor, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(grabCursor, _hotspot, CursorMode.Auto);
     }
 }
