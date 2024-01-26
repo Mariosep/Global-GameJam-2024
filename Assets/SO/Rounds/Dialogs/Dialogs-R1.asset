@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2757b4de29ca47e3b227cda49127a855, type: 3}
+  m_Name: Dialogs-R1
+  m_EditorClassIdentifier: 
+  preDecorPhaseDialog: {fileID: -8155032193887459707, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  decorPhaseDialog: {fileID: -8589248900382109041, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  postDecorPhaseDialog: {fileID: -5550477897350775727, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  preRatePhaseDialog: {fileID: -2459046852476750479, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  ratePhaseDialog: {fileID: 3454279551556250856, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  postRatePhaseDialog: {fileID: 1724056394595211342, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}

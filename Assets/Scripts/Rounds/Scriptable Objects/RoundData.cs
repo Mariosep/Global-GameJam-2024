@@ -1,14 +1,13 @@
 using System.Collections.Generic;
-using AQM.Tools;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "RoundData", fileName = "RoundData")]
 public class RoundData : ScriptableObject
 {
-    public AccessoriesCollectionData accessoriesCollectionData;
-    public GameObject baseImage;
+    public GameObject shelfPrefab;
+    public GameObject baseImagePrefab;
     public List<GameObject> npcResults;
     public float roundTime;
-    public ConversationTree conversation;
+    public DialogData dialogData;
     public List<BackgroundData> backgrounds;
 }

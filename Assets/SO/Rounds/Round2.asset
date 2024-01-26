@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668a9636768b4769b58e6910ef2f55e3, type: 3}
   m_Name: Round2
   m_EditorClassIdentifier: 
-  accessoriesCollectionData: {fileID: 11400000, guid: eac8b5707d155c4469058fb74a013d08, type: 2}
-  baseImage: {fileID: 6416983265230716710, guid: 2ce2954c0e5d41d409db77b8efd3995d, type: 3}
+  shelfPrefab: {fileID: 2861234333370394245, guid: 48b542d541b6a6643a7b51239813013f, type: 3}
+  baseImagePrefab: {fileID: 6416983265230716710, guid: 2ce2954c0e5d41d409db77b8efd3995d, type: 3}
   npcResults: []
   roundTime: 2
   conversation: {fileID: -606996428101015881, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}

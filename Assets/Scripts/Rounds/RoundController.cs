@@ -2,7 +2,7 @@ using System;
 using AQM.Tools;
 using UnityEngine;
 
-public class RoundController : MonoBehaviour
+public class RoundController : Singleton<RoundController>
 {
     public Action onRoundCompleted;
     public int roundNumber;
@@ -34,11 +34,6 @@ public class RoundController : MonoBehaviour
         state = RoundState.Pending;
         
         RoundChannel.onRoundStarted?.Invoke(this);
-        
-        if (roundData.conversation)
-        {
-            DDEvents.onStartConversation?.Invoke(roundData.conversation);
-        }
         
         StartDecorPhase();
     }

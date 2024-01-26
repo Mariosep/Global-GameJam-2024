@@ -1,44 +1,34 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AccessoriesManager : MonoBehaviour
+public class AccessoriesManager : Singleton<AccessoriesManager>
 {
     public Transform accessoriesContainer;
     
-    private AccessoriesCollectionData _accessoriesCollectionData;
-    private List<GameObject> _accessoryList;
+    private ShelfController _shelfController;
     
     private void Awake()
     {
-        RoundChannel.onRoundStarted += OnRoundStarted;
         RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted += OnRoundCompleted;
-
-        _accessoryList = new List<GameObject>();
     }
     
-    private void OnDisable()
+    private void OnDestroy()
     {
-        RoundChannel.onRoundStarted -= OnRoundStarted;
+        RoundChannel.onDecorPhaseCompleted -= OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted -= OnRoundCompleted;
     }
     
-    private void OnRoundStarted(RoundController roundControllerStarted)
+    public void ShowShelf(GameObject shelfPrefab)
     {
-        _accessoriesCollectionData = roundControllerStarted.roundData.accessoriesCollectionData;
+        if(_shelfController != null)
+            Destroy(_shelfController.gameObject);
 
-        _accessoryList.ForEach(Destroy);
-
-        foreach (GameObject accessoryPrefab in _accessoriesCollectionData.accessoriesList)
-        {
-            GameObject accessory = Instantiate(accessoryPrefab, accessoriesContainer);
-            _accessoryList.Add(accessory);
-        }
+        _shelfController = Instantiate(shelfPrefab, transform).GetComponent<ShelfController>();
     }
     
     private void OnDecorPhaseCompleted()
     {
-        
+        _shelfController.Disappear();
     }
     
     private void OnRoundCompleted(RoundController roundControllerCompleted)

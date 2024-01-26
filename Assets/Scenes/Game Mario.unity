@@ -1705,10 +1705,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conversation Window
       objectReference: {fileID: 0}
-    - target: {fileID: 8339038912177545453, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
-      propertyPath: m_Volume
-      value: 0.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

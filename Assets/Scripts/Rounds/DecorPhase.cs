@@ -12,7 +12,9 @@ public interface IPhase
 
 public class DecorPhase : Singleton<DecorPhase>, IPhase
 {
-    public float preDecorTime;
+    public float waitAfterShelfShowed;
+    public float waitAfterBaseImageShowed;
+    public float waitAfterDecorTimeEnded;
 
     private RoundController _currentRoundController;
 
@@ -30,11 +32,17 @@ public class DecorPhase : Singleton<DecorPhase>, IPhase
     
     public IEnumerator PrePhase()
     {
+        RoundChannel.onPreDecorPhase?.Invoke();
+        
+        AccessoriesManager.Instance.ShowShelf(roundData.shelfPrefab);
+        
+        yield return new WaitForSeconds(waitAfterShelfShowed);
+        
         _currentRoundController.state = RoundState.PreDecor;
         
-        ViewPortManager.Instance.InstantiateBaseImage(_currentRoundController.roundData.baseImage);
+        ViewPortManager.Instance.InstantiateBaseImage(_currentRoundController.roundData.baseImagePrefab);
 
-        yield return new WaitForSeconds(preDecorTime);
+        yield return new WaitForSeconds(waitAfterBaseImageShowed);
         
         RoundChannel.onBaseImageShowed?.Invoke();
         
@@ -67,6 +75,8 @@ public class DecorPhase : Singleton<DecorPhase>, IPhase
     
     public IEnumerator PostPhase()
     {
+        RoundChannel.onPostDecorPhase?.Invoke();
+        
         _currentRoundController.state = RoundState.PostDecor;
         
         yield return null;
