@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ViewPortManager : Singleton<ViewPortManager>
 {
+    public RectTransform viewFrame;
     public RectTransform playerResultContainer;
     public RectTransform npcResultContainer;
     
@@ -17,7 +18,7 @@ public class ViewPortManager : Singleton<ViewPortManager>
     
     private void Awake()
     {
-        var viewPortImage = GetComponent<Image>();
+        var viewPortImage = viewFrame.GetComponent<Image>();
         viewPortBounds = viewPortImage.sprite.bounds;
         
         InteractionChannel.onImageReleased += OnImageReleased;
