@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00029755, y: -369}
+  m_AnchoredPosition: {x: 0.00029755, y: -360.9}
   m_SizeDelta: {x: 458.44, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1516900873056187394
@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.638, y: -0.64779377}
+  m_AnchoredPosition: {x: -0.638, y: -6.5}
   m_SizeDelta: {x: 416.438, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2300190825535638846
@@ -390,8 +390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.243, y: 0}
-  m_SizeDelta: {x: 439.892, y: 70.261}
+  m_AnchoredPosition: {x: 0.243, y: -5.9319987}
+  m_SizeDelta: {x: 439.89, y: 58.397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5386817059861029631
 CanvasRenderer:
@@ -414,15 +414,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9634041, b: 0.72264147, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d795258c7651339409d4b5c70f075401, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -466,7 +466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.000091552734}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 438, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1070660340193945576
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5180724228006195600}
   m_HandleRect: {fileID: 4251299333577482978}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -739,8 +739,8 @@ MonoBehaviour:
   responsePanel: {fileID: 1781039215532022857}
   dialogPrefab: {fileID: 5938453228786418913, guid: 8d7ad5fff1e115d448bf1318b14c01c9, type: 3}
   responsePrefab: {fileID: 5050206227738117268, guid: 384400d820108974884da6e49223bda6, type: 3}
-  receiveMessageSound: {fileID: 8300000, guid: d900ff02034a47b40aade4f1375b8e49, type: 3}
-  sendMessageSound: {fileID: 8300000, guid: c494bbd2b51e5a6448d8a93e4f984bcf, type: 3}
+  receiveMessageSound: {fileID: 8300000, guid: a3ffa54d63886494093c42e9cde357ba, type: 3}
+  sendMessageSound: {fileID: 8300000, guid: 39b8d2ff209a51247b1406138678a7a9, type: 3}
 --- !u!82 &8339038912177545453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.21971, y: -52.1}
+  m_AnchoredPosition: {x: 229.21971, y: -56}
   m_SizeDelta: {x: 416.44, y: 50.733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6391123744198141764
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9960785, g: 0.98823535, b: 0.909804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

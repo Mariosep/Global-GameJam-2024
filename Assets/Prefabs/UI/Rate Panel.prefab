@@ -587,7 +587,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8316757859139269208}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01750c7cb718a0e46ba984e6ecf6f777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ratePanel: {fileID: 8316757859139269208}
+  contentContainer: {fileID: 0}
   pukeButton: {fileID: 3815255807038034194}
   fineButton: {fileID: 8036650023042047833}
   funnyButton: {fileID: 3371694774799397287}

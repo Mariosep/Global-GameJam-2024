@@ -18,7 +18,7 @@ public class DialogManager : MonoBehaviour
         RoundChannel.onPostRatePhase+= OnPostDecorPhase;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         RoundChannel.onRoundStarted -= OnRoundStarted;
 
