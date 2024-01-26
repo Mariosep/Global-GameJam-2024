@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using AQM.Tools;
 using TMPro;
@@ -13,17 +11,22 @@ public class ConversationUIListener : MonoBehaviour
     [SerializeField] private GameObject responsePanel;
     [SerializeField] private GameObject dialogPrefab;
     [SerializeField] private GameObject responsePrefab;
+
+    public AudioClip receiveMessageSound;
+    public AudioClip sendMessageSound;
     
     private DSChoice _currentChoiceNode;
     private Coroutine _choiceCo;
     private bool _stopTimer;
     private RectTransform _panelRectTransform;
+    private AudioSource _audioSource;
     
     private void Awake()
     {
         DialogSystemController.onShowNewDialog += ShowDialogNode;
         DialogSystemController.onShowNewChoiceInTime += ShowChoiceNode;
         _panelRectTransform = panelContainer.GetComponent<RectTransform>();
+        _audioSource = GetComponent<AudioSource>();
     }
     
     private void ShowDialogNode(DSDialog node)
@@ -35,6 +38,13 @@ public class ConversationUIListener : MonoBehaviour
             string hexColor = ColorUtility.ToHtmlStringRGBA(node.Actor.bgColor);
             newDialog.GetComponentInChildren<TextMeshProUGUI>().text = "<color=#"+hexColor+">"+node.Actor.fullName+":</color> "+node.Message;
             LayoutRebuilder.MarkLayoutForRebuild(_panelRectTransform);
+
+            if (node.Actor.fullName == "Player")
+                _audioSource.clip = sendMessageSound;
+            else
+                _audioSource.clip = receiveMessageSound;
+            
+            _audioSource.Play();
         }
     }
     
@@ -48,6 +58,9 @@ public class ConversationUIListener : MonoBehaviour
             string hexColor = ColorUtility.ToHtmlStringRGBA(node.Actor.bgColor);
             newChoice.GetComponentInChildren<TextMeshProUGUI>().text = "<color=#"+hexColor+">"+node.Actor.fullName+":</color> "+node.Message;
             LayoutRebuilder.MarkLayoutForRebuild(_panelRectTransform);
+            
+            _audioSource.clip = receiveMessageSound;
+            _audioSource.Play();
             
             InstantiateChoices();
 

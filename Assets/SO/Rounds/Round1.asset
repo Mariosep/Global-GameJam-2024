@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accessoriesCollectionData: {fileID: 11400000, guid: 9a4bfa80b03110c43bc9f99e2d2a865b, type: 2}
   baseImage: {fileID: 8372191055008664806, guid: dcb9b1c6dc7e00b418f80de29678711c, type: 3}
-  roundTime: 2
-  conversation: {fileID: -606996428101015881, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
   npcResults:
   - {fileID: 8813370805979804429, guid: 3bda04e6e6724ab4f8e68db9701e1c90, type: 3}
   - {fileID: 563784571525429423, guid: 4a1ee2b117ace95469ad7065eee428c4, type: 3}
+  roundTime: 2
+  conversation: {fileID: -8155032193887459707, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  backgrounds: []
