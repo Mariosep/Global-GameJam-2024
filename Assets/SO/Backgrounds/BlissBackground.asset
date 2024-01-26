@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c91f97cbbe640c4bb77b484c3aa97f2, type: 3}
-  m_Name: Bliss Background
+  m_Name: BlissBackground
   m_EditorClassIdentifier: 
   title: Bliss BackGround
   bg: {fileID: 21300000, guid: 186928c92e451024e85426f40cce850c, type: 3}
-  left: 0
-  top: 0
-  right: 0
-  bottom: 0
+  left: -126
+  top: -16
+  right: 127
+  bottom: 16
   scale: {x: 1.4876373, y: 1.1099068, z: 2.155996}

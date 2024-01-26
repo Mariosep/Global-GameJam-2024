@@ -23,6 +23,7 @@ public class RoundController : MonoBehaviour
     private void OnDestroy()
     {
         RoundChannel.onDecorPhaseCompleted -= StartRatePhase;
+        RoundChannel.onRatePhaseCompleted -= Complete;
     }
 
     public void Begin(RoundData roundData, int roundNumber)
@@ -50,7 +51,6 @@ public class RoundController : MonoBehaviour
     private void StartRatePhase()
     {
         ratePhase.Begin(this);
-        RateManager.Instance.StartRate(this);
     }
 
     public void Complete()
