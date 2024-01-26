@@ -67,6 +67,7 @@ MonoBehaviour:
   roundNumber: 0
   roundData: {fileID: 0}
   state: 0
+  startInRatePhase: 1
   decorPhase: {fileID: 451335105170132121}
   ratePhase: {fileID: 6115275047035299121}
 --- !u!114 &451335105170132121
@@ -81,7 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3e9f5fdae44f96aa2dd7b6d00938c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preDecorTime: 2
+  waitAfterShelfShowed: 3
+  waitAfterBaseImageShowed: 3
+  waitAfterDecorTimeEnded: 5
 --- !u!114 &6115275047035299121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,3 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcced9bbf9ae448fa4be3bfed76773d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitAfterResultShowed: 5
+  waitAfterPlayerHasRated: 2
+  waitAfterRatingShowed: 5

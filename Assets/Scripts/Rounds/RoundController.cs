@@ -11,6 +11,8 @@ public class RoundController : Singleton<RoundController>
     
     public RoundState state;
 
+    public bool startInRatePhase;
+    
     public DecorPhase decorPhase;
     public RatePhase ratePhase;
 
@@ -34,8 +36,11 @@ public class RoundController : Singleton<RoundController>
         state = RoundState.Pending;
         
         RoundChannel.onRoundStarted?.Invoke(this);
-        
-        StartDecorPhase();
+
+        if (startInRatePhase)
+            StartRatePhase();
+        else
+            StartDecorPhase();
     }
 
     private void StartDecorPhase()
@@ -63,6 +68,6 @@ public enum RoundState
     PreDecor,
     Decor,
     PostDecor,
-    Vote,
+    Rate,
     Completed
 }

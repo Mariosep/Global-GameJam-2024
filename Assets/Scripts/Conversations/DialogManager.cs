@@ -3,22 +3,27 @@ using UnityEngine;
 
 public class DialogManager : MonoBehaviour
 {
+    public bool disableDialogs;
+    
     private DialogData _dialogData;
     
     private void Awake()
     {
-        RoundChannel.onRoundStarted += OnRoundStarted;
+        if(!disableDialogs)
+        {
+            RoundChannel.onRoundStarted += OnRoundStarted;
 
-        RoundChannel.onPreDecorPhase += OnPreDecorPhase;
-        RoundChannel.onDecorPhaseStarted += OnDecorPhaseStarted;
-        RoundChannel.onPostDecorPhase += OnPostDecorPhase;
-        
-        RoundChannel.onPreRatePhase += OnPreDecorPhase;
-        RoundChannel.onRatePhaseStarted += OnDecorPhaseStarted;
-        RoundChannel.onPostRatePhase+= OnPostDecorPhase;
+            RoundChannel.onPreDecorPhase += OnPreDecorPhase;
+            RoundChannel.onDecorPhaseStarted += OnDecorPhaseStarted;
+            RoundChannel.onPostDecorPhase += OnPostDecorPhase;
+
+            RoundChannel.onPreRatePhase += OnPreDecorPhase;
+            RoundChannel.onRatePhaseStarted += OnDecorPhaseStarted;
+            RoundChannel.onPostRatePhase += OnPostDecorPhase;
+        }
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         RoundChannel.onRoundStarted -= OnRoundStarted;
 

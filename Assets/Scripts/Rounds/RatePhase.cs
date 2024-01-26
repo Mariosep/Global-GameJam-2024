@@ -1,15 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RatePhase : Singleton<RatePhase>, IPhase
 {
-    private RoundController _currentRoundController;
-    
-    private RoundData roundData => _currentRoundController.roundData;
+    public float waitAfterResultShowed;
+    public float waitAfterPlayerHasRated;
+    public float waitAfterRatingShowed;
+
+    private RoundController _roundController;
+    private RoundData roundData => _roundController.roundData;
     
     public void Begin(RoundController roundController)
     {
-        _currentRoundController = roundController;
+        _roundController = roundController;
         
         StartCoroutine(PrePhase());
     }
@@ -24,29 +28,48 @@ public class RatePhase : Singleton<RatePhase>, IPhase
 
     public IEnumerator StartPhase()
     {
-        yield return new WaitForSeconds(3f);
-
-        foreach (GameObject imageResult in roundData.npcResults)
+        for (var index = 0; index < roundData.npcResults.Count; index++)
         {
-            ViewPortManager.Instance.HideNPCResult(imageResult);
+            var imageResult = roundData.npcResults[index];
+            ViewPortManager.Instance.HideNPCResult();
             ViewPortManager.Instance.ShowNPCResult(imageResult);
-            
-            RateUI.Instance.StartRate(_currentRoundController);
 
-            yield return new WaitForSeconds(5f);
+            RateUI.Instance.ShowRatePanel(_roundController);
+
+            while (!RateUI.Instance.playerHasRated)
+                yield return new WaitForEndOfFrame();
+
+            RateUI.Instance.HideRatePanel();
+
+            yield return new WaitForSeconds(waitAfterPlayerHasRated);
+
+            RatingObtainedUI.Instance.ShowRatingObtainedPanel();
             
-            Debug.Log("Show rate result");
+            yield return new WaitForSeconds(4f);
             
-            yield return new WaitForSeconds(5f);
+            RatingObtainedUI.Instance.ShowResult(roundData.npcRatings[index]);
+            
+            yield return new WaitForSeconds(waitAfterRatingShowed);
+            
+            RatingObtainedUI.Instance.HideRatingObtainedPanel();
         }
-        
+
+        ViewPortManager.Instance.HideNPCResult();
         ViewPortManager.Instance.ShowPlayerResult();
         
+        yield return new WaitForSeconds(waitAfterResultShowed);
+        
         yield return new WaitForSeconds(5f);
         
-        Debug.Log("Show rate result");
-            
-        yield return new WaitForSeconds(5f);
+        RatingObtainedUI.Instance.ShowRatingObtainedPanel();
+        
+        yield return new WaitForSeconds(4f);
+        
+        RatingObtainedUI.Instance.ShowResult(roundData.playerRating);
+        
+        yield return new WaitForSeconds(waitAfterRatingShowed);
+        
+        RatingObtainedUI.Instance.HideRatingObtainedPanel();
 
         StartCoroutine(PostPhase());
     }

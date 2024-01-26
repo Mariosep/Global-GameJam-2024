@@ -9,7 +9,6 @@ public interface IPhase
     public IEnumerator PostPhase();
 }
 
-
 public class DecorPhase : Singleton<DecorPhase>, IPhase
 {
     public float waitAfterShelfShowed;
