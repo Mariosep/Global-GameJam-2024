@@ -1607,6 +1607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conversation Window
       objectReference: {fileID: 0}
+    - target: {fileID: 7888273727264823795, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
+      propertyPath: sendMessageSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 46fdd651cf67057408a58ddfafa9b697, type: 3}
+    - target: {fileID: 7888273727264823795, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
+      propertyPath: receiveMessageSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c26c6a6f88eff14996a57ab8fe25b4b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

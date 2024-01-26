@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2757b4de29ca47e3b227cda49127a855, type: 3}
   m_Name: Dialogs-R2
   m_EditorClassIdentifier: 
-  preDecorPhaseDialog: {fileID: -8155032193887459707, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  decorPhaseDialog: {fileID: -8589248900382109041, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  postDecorPhaseDialog: {fileID: -5550477897350775727, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  preRatePhaseDialog: {fileID: -2459046852476750479, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  ratePhaseDialog: {fileID: 3454279551556250856, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  postRatePhaseDialog: {fileID: 1724056394595211342, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  preDecorPhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  decorPhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  postDecorPhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  preRatePhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  ratePhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  postRatePhaseDialog: {fileID: 4973116494147525026, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
