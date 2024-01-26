@@ -15,8 +15,8 @@ MonoBehaviour:
   shelfPrefab: {fileID: 2861234333370394245, guid: 48b542d541b6a6643a7b51239813013f, type: 3}
   baseImagePrefab: {fileID: 6416983265230716710, guid: 2ce2954c0e5d41d409db77b8efd3995d, type: 3}
   npcResults: []
-  roundTime: 2
-  conversation: {fileID: -606996428101015881, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  roundTime: 30
+  dialogData: {fileID: 0}
   backgrounds:
   - {fileID: 11400000, guid: 5926cbc2be3ede04fbc68832d576f478, type: 2}
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}

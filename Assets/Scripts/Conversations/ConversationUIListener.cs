@@ -27,11 +27,11 @@ public class ConversationUIListener : MonoBehaviour
         DialogSystemController.onShowNewChoiceInTime += ShowChoiceNode;
         _panelRectTransform = panelContainer.GetComponent<RectTransform>();
         _audioSource = GetComponent<AudioSource>();
+        DestroyAllChildren(responsePanel.transform);
     }
     
     private void ShowDialogNode(DSDialog node)
     {
-        DestroyAllChildren(responsePanel.transform);
         GameObject newDialog = Instantiate(dialogPrefab,panelContainer.transform);
         if (newDialog)
         {
@@ -50,7 +50,7 @@ public class ConversationUIListener : MonoBehaviour
     
     private void ShowChoiceNode(DSChoice node, float seconds)
     {
-        DestroyAllChildren(responsePanel.transform);
+        
         _currentChoiceNode = node;
         GameObject newChoice = Instantiate(dialogPrefab,panelContainer.transform);
         if (newChoice)
@@ -113,6 +113,7 @@ public class ConversationUIListener : MonoBehaviour
     {
         if(_choiceCo != null) StopCoroutine(_choiceCo);
         choiceNode.onChoiceSelected.Invoke(index);
+        DestroyAllChildren(responsePanel.transform);
     }
 
     private void OnDestroy()
