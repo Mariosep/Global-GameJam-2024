@@ -326,7 +326,8 @@ MonoBehaviour:
   id: 6794d4c884d3aad4681501392d2b2805
   portName: 
   originNode: {fileID: -701629586411637758}
-  targetNodes: []
+  targetNodes:
+  - {fileID: -6550998355613766785}
 --- !u!114 &-1794490819305160348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,15 +472,15 @@ MonoBehaviour:
   m_Name: DialogNode-ca8620971773324409244fb8ecc7754e
   m_EditorClassIdentifier: 
   guid: ca8620971773324409244fb8ecc7754e
-  position: {x: 352.3897, y: 247.79918}
+  position: {x: 286.40396, y: 200}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
   - {fileID: 9016024844068843267}
   outputPorts:
   - {fileID: -2199544156170897511}
-  actor: {fileID: 0}
-  message: 
+  actor: {fileID: -7195261011611767272}
+  message: Ahora si cohone
   delayTime: 0
   requirements: {fileID: -1794490819305160348}
   actionList: {fileID: -4003811789405961975}
@@ -881,7 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startNode: {fileID: 9027178926917303576}
   startBookmark: {fileID: -637990486467283239}
-  defaultActor: {fileID: 0}
+  defaultActor: {fileID: -7195261011611767272}
   completeNode: {fileID: -6550998355613766785}
   nodes:
   - {fileID: 9027178926917303576}
@@ -980,7 +981,8 @@ MonoBehaviour:
   id: 0e900897b4b997b4ba3a7ab246bc59e5
   portName: 
   originNode: {fileID: 9027178926917303576}
-  targetNodes: []
+  targetNodes:
+  - {fileID: -701629586411637758}
 --- !u!114 &8403768502267367985
 MonoBehaviour:
   m_ObjectHideFlags: 0

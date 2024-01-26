@@ -65,7 +65,7 @@ public class ViewPortManager : Singleton<ViewPortManager>
          Instantiate(imageResult, npcResultContainer);
     }
     
-    public void HideNPCResult(GameObject imageResult)
+    public void HideNPCResult()
     {
         if(npcResultContainer.childCount > 0)
             Destroy(npcResultContainer.GetChild(0).gameObject); 
