@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00029755, y: -360.9}
+  m_AnchoredPosition: {x: 0.00029755, y: -376.5}
   m_SizeDelta: {x: 458.44, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1516900873056187394
@@ -223,7 +223,7 @@ RectTransform:
   m_GameObject: {fileID: 1781039215532022857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.06, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2143557363771187530}
@@ -231,7 +231,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.638, y: -6.5}
-  m_SizeDelta: {x: 416.438, y: 0}
+  m_SizeDelta: {x: 416.438, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2300190825535638846
 CanvasRenderer:
@@ -314,7 +314,7 @@ RectTransform:
   m_Father: {fileID: 3835951057537151069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -390,8 +390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.243, y: -5.9319987}
-  m_SizeDelta: {x: 439.89, y: 58.397}
+  m_AnchoredPosition: {x: 3.55, y: -5.9319987}
+  m_SizeDelta: {x: 475.27, y: 58.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5386817059861029631
 CanvasRenderer:
@@ -467,7 +467,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 438, y: 0}
+  m_SizeDelta: {x: 438, y: 35}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1070660340193945576
 CanvasRenderer:
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.86072165, b: 0.5034745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.9215687, g: 0.8431373, b: 0.3254902, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &256892142891140167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -739,8 +739,8 @@ MonoBehaviour:
   responsePanel: {fileID: 1781039215532022857}
   dialogPrefab: {fileID: 5938453228786418913, guid: 8d7ad5fff1e115d448bf1318b14c01c9, type: 3}
   responsePrefab: {fileID: 5050206227738117268, guid: 384400d820108974884da6e49223bda6, type: 3}
-  receiveMessageSound: {fileID: 8300000, guid: a3ffa54d63886494093c42e9cde357ba, type: 3}
-  sendMessageSound: {fileID: 8300000, guid: 39b8d2ff209a51247b1406138678a7a9, type: 3}
+  receiveMessageSound: {fileID: 8300000, guid: 5c26c6a6f88eff14996a57ab8fe25b4b, type: 3}
+  sendMessageSound: {fileID: 8300000, guid: 46fdd651cf67057408a58ddfafa9b697, type: 3}
 --- !u!82 &8339038912177545453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ RectTransform:
   m_GameObject: {fileID: 9151345841870417419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.06, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2143557363771187530}
