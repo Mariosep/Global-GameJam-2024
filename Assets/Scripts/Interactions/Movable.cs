@@ -6,7 +6,7 @@ public class Movable : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public RectTransform rectTransform;
 
     private Vector3 offsetWithMouse;
-    private bool isSelected;
+    [SerializeField] private bool isSelected;
     
     private void Awake()
     {

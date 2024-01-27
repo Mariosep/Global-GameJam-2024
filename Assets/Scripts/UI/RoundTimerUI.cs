@@ -36,6 +36,7 @@ public class RoundTimerUI : MonoBehaviour
     {
         RoundChannel.onRoundStarted -= OnRoundStarted;
         RoundChannel.onDecorPhaseStarted -= OnDecorPhaseStarted;
+        RoundChannel.onPostDecorPhase -= OnPostDecorPhase;
         RoundChannel.onDecorPhaseCompleted -= OnDecorPhaseCompleted;
     }
 
