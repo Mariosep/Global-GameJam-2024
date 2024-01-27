@@ -25,7 +25,6 @@ public class RatingObtainedUI : Singleton<RatingObtainedUI>
 
     public void ShowRatingObtainedPanel()
     {
-        //content.SetActive(true);
         HideResult();
         _animator.SetBool("ShowPanel", true);
     }
@@ -33,8 +32,6 @@ public class RatingObtainedUI : Singleton<RatingObtainedUI>
     public void HideRatingObtainedPanel()
     {
         _animator.SetBool("ShowPanel", false);
-        /*content.SetActive(false);
-        HideResult();*/
     }
     
     public void ShowResult(RatingType ratingObtained)

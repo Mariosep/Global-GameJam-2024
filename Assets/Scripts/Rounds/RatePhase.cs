@@ -1,12 +1,13 @@
 using System.Collections;
+using AQM.Tools;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class RatePhase : Singleton<RatePhase>, IPhase
 {
     public float waitAfterResultShowed;
     public float waitAfterPlayerHasRated;
     public float waitAfterRatingShowed;
+    public float waitAfterRatingHided;
 
     private RoundController _roundController;
     private RoundData roundData => _roundController.roundData;
@@ -31,8 +32,11 @@ public class RatePhase : Singleton<RatePhase>, IPhase
         for (var index = 0; index < roundData.npcResults.Count; index++)
         {
             var imageResult = roundData.npcResults[index];
+            Actor npcActor = DialogSystemController.Instance.DialogSystemDatabase.actors[index];
+            
             ViewPortManager.Instance.HideNPCResult();
             ViewPortManager.Instance.ShowNPCResult(imageResult);
+            ViewPortManager.Instance.ShowUsername(npcActor.fullName, npcActor.bgColor);
 
             RateUI.Instance.ShowRatePanel(_roundController);
 
@@ -52,10 +56,16 @@ public class RatePhase : Singleton<RatePhase>, IPhase
             yield return new WaitForSeconds(waitAfterRatingShowed);
             
             RatingObtainedUI.Instance.HideRatingObtainedPanel();
+            
+            yield return new WaitForSeconds(waitAfterRatingHided);
         }
 
+        int actorsCount = DialogSystemController.Instance.DialogSystemDatabase.actors.Count;
+        Actor playerActor = DialogSystemController.Instance.DialogSystemDatabase.actors[actorsCount-1];
+        
         ViewPortManager.Instance.HideNPCResult();
         ViewPortManager.Instance.ShowPlayerResult();
+        ViewPortManager.Instance.ShowUsername(playerActor.fullName, playerActor.bgColor);
         
         yield return new WaitForSeconds(waitAfterResultShowed);
         
@@ -70,7 +80,11 @@ public class RatePhase : Singleton<RatePhase>, IPhase
         yield return new WaitForSeconds(waitAfterRatingShowed);
         
         RatingObtainedUI.Instance.HideRatingObtainedPanel();
+        
+        yield return new WaitForSeconds(waitAfterRatingHided);
 
+        ViewPortManager.Instance.HidePlayerResult();
+        
         StartCoroutine(PostPhase());
     }
     
