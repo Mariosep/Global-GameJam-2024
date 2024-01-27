@@ -2318,6 +2318,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4251299333577482978, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251299333577482978, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7452425015341901424, guid: 12f16bc1288ebe6418dd1f179fc3a59b, type: 3}
       propertyPath: m_Name
       value: Conversation Window
@@ -4727,19 +4735,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 88776312940309436, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00013974174
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287692839622691228, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287692839622691228, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287692839622691228, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+      value: 0.000009540783
       objectReference: {fileID: 0}
     - target: {fileID: 2010866122995195434, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
       propertyPath: m_Name
@@ -5884,6 +5880,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 452064140}
+    - target: {fileID: 5457925254841932242, guid: 45b1185b248af234bbcd610ecf1b321e, type: 3}
+      propertyPath: m_Name
+      value: Top bar text
+      objectReference: {fileID: 0}
     - target: {fileID: 6148711705881272487, guid: 45b1185b248af234bbcd610ecf1b321e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 98.02
@@ -5946,7 +5946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8987930273675576709, guid: 45b1185b248af234bbcd610ecf1b321e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

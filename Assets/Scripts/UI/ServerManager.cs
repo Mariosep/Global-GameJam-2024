@@ -1,17 +1,13 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UI.Tables;
 using UnityEngine.UI;
-using Random = System.Random;
 
 public class ServerManager : MonoBehaviour
 {
-   public GameObject tableContainer;
-   public GameObject joinCanvasParent;
    public TableLayout tableLayout;
+   public JoiningController joinController;
    public List<ServerData> servers = new List<ServerData>();
    public GameObject privateIconPrefab;
    public GameObject textPrefab;
@@ -52,27 +48,6 @@ public class ServerManager : MonoBehaviour
       TableCell cell5 = row.Cells[5];
       GameObject go = Instantiate(joinButtonPrefab,cell5.transform);
       Button button = go.GetComponentInChildren<Button>();
-      if (server.isPrivate)
-      {
-         button.onClick.AddListener(delegate() { OpenVerifyModal(server.code); });
-      }
-      else
-      {
-         button.onClick.AddListener(delegate() { StartCoroutine(OpenServer()); });
-      }
-   }
-
-   private IEnumerator OpenServer()
-   {
-      tableContainer.SetActive(false);
-      joinCanvasParent.SetActive(true);
-      Random rnd = new Random();
-      yield return new WaitForSeconds(rnd.Next(5,10));
-      joinCanvasParent.SetActive(false);
-   }
-
-   private void OpenVerifyModal(int code)
-   {
-      Debug.Log("open modal");
+      button.onClick.AddListener(delegate() {joinController.OnOpenModal(server);});
    }
 }
