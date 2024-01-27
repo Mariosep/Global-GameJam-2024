@@ -12,6 +12,7 @@ public class JoiningController : MonoBehaviour
     public GameObject joiningPanel;
     public GameObject codeVerificationPanel;
     public TMP_InputField codeInputFile;
+    public AudioClip errorAudio;
 
     private Coroutine _joiningCo;
 
@@ -19,10 +20,12 @@ public class JoiningController : MonoBehaviour
     private Vector2 _offsetDefaultMin;
     private Vector2 _offsetDefaultMax;
     private ServerData _currentServerData;
+    private AudioSource _audioSource;
 
     private void Awake()
     {
         _joiningRecTransForm = joiningModal.GetComponent<RectTransform>();
+        _audioSource = GetComponent<AudioSource>();
         _offsetDefaultMin = _joiningRecTransForm.offsetMin;
         _offsetDefaultMax = _joiningRecTransForm.offsetMax;
     }
@@ -57,6 +60,7 @@ public class JoiningController : MonoBehaviour
 
     public void OnVerifyPassword()
     {
+        if(codeInputFile.text == "") return;
         int code = int.Parse(codeInputFile.text);
         if (code == _currentServerData.code)
         {
@@ -65,7 +69,7 @@ public class JoiningController : MonoBehaviour
         }
         else
         {
-            Debug.Log("INCORRECT");
+            _audioSource.PlayOneShot(errorAudio);
         }
         codeInputFile.text = "";
     }
