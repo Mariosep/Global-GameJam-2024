@@ -3,13 +3,16 @@ using UnityEngine;
 public class AccessoriesManager : Singleton<AccessoriesManager>
 {
     public Transform accessoriesContainer;
-    
+
+    private GameObject _shelf;
     private ShelfController _shelfController;
     
     private void Awake()
     {
         RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted += OnRoundCompleted;
+
+        _shelfController = GetComponent<ShelfController>();
     }
     
     private void OnDestroy()
@@ -20,15 +23,16 @@ public class AccessoriesManager : Singleton<AccessoriesManager>
     
     public void ShowShelf(GameObject shelfPrefab)
     {
-        if(_shelfController != null)
-            Destroy(_shelfController.gameObject);
+        if(_shelf != null)
+            Destroy(_shelf);
 
-        _shelfController = Instantiate(shelfPrefab, transform).GetComponent<ShelfController>();
+        _shelf = Instantiate(shelfPrefab, transform).gameObject;
+        _shelfController.ShowShelf();
     }
     
     private void OnDecorPhaseCompleted()
     {
-        _shelfController.Disappear();
+        _shelfController.HideShelf();
     }
     
     private void OnRoundCompleted(RoundController roundControllerCompleted)

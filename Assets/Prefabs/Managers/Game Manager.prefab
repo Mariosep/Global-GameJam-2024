@@ -67,7 +67,7 @@ MonoBehaviour:
   roundNumber: 0
   roundData: {fileID: 0}
   state: 0
-  startInRatePhase: 1
+  startInRatePhase: 0
   decorPhase: {fileID: 451335105170132121}
   ratePhase: {fileID: 6115275047035299121}
 --- !u!114 &451335105170132121
@@ -99,4 +99,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitAfterResultShowed: 5
   waitAfterPlayerHasRated: 2
-  waitAfterRatingShowed: 5
+  waitAfterRatingShowed: 7
+  waitAfterRatingHided: 5

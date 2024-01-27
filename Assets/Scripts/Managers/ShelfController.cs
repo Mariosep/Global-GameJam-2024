@@ -9,8 +9,13 @@ public class ShelfController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void Disappear()
+    public void ShowShelf()
     {
-        _animator.SetTrigger("Disappear");
+        _animator.SetBool("ShowShelf", true);
+    }
+    
+    public void HideShelf()
+    {
+        _animator.SetBool("ShowShelf", false);
     }
 }

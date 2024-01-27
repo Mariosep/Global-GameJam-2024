@@ -8,7 +8,6 @@ public class RoundData : ScriptableObject
     public GameObject shelfPrefab;
     public GameObject baseImagePrefab;
     public List<GameObject> npcResults;
-    public List<Actor> npcActors;
     public List<RatingType> npcRatings;
     public RatingType playerRating;
     public float roundTime;

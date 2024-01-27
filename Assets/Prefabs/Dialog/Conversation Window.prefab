@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00029755, y: -360.9}
+  m_AnchoredPosition: {x: 0.00029755, y: -381}
   m_SizeDelta: {x: 458.44, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1516900873056187394
@@ -739,8 +739,8 @@ MonoBehaviour:
   responsePanel: {fileID: 1781039215532022857}
   dialogPrefab: {fileID: 5938453228786418913, guid: 8d7ad5fff1e115d448bf1318b14c01c9, type: 3}
   responsePrefab: {fileID: 5050206227738117268, guid: 384400d820108974884da6e49223bda6, type: 3}
-  receiveMessageSound: {fileID: 8300000, guid: a3ffa54d63886494093c42e9cde357ba, type: 3}
-  sendMessageSound: {fileID: 8300000, guid: 39b8d2ff209a51247b1406138678a7a9, type: 3}
+  receiveMessageSound: {fileID: 8300000, guid: 5c26c6a6f88eff14996a57ab8fe25b4b, type: 3}
+  sendMessageSound: {fileID: 8300000, guid: 46fdd651cf67057408a58ddfafa9b697, type: 3}
 --- !u!82 &8339038912177545453
 AudioSource:
   m_ObjectHideFlags: 0

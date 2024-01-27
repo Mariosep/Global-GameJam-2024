@@ -1,13 +1,13 @@
 using System.Collections;
 using AQM.Tools;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class RatePhase : Singleton<RatePhase>, IPhase
 {
     public float waitAfterResultShowed;
     public float waitAfterPlayerHasRated;
     public float waitAfterRatingShowed;
+    public float waitAfterRatingHided;
 
     private RoundController _roundController;
     private RoundData roundData => _roundController.roundData;
@@ -56,6 +56,8 @@ public class RatePhase : Singleton<RatePhase>, IPhase
             yield return new WaitForSeconds(waitAfterRatingShowed);
             
             RatingObtainedUI.Instance.HideRatingObtainedPanel();
+            
+            yield return new WaitForSeconds(waitAfterRatingHided);
         }
 
         int actorsCount = DialogSystemController.Instance.DialogSystemDatabase.actors.Count;
@@ -78,7 +80,11 @@ public class RatePhase : Singleton<RatePhase>, IPhase
         yield return new WaitForSeconds(waitAfterRatingShowed);
         
         RatingObtainedUI.Instance.HideRatingObtainedPanel();
+        
+        yield return new WaitForSeconds(waitAfterRatingHided);
 
+        ViewPortManager.Instance.HidePlayerResult();
+        
         StartCoroutine(PostPhase());
     }
     
