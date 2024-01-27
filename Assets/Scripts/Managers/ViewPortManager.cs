@@ -1,3 +1,5 @@
+using AQM.Tools;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +8,8 @@ public class ViewPortManager : Singleton<ViewPortManager>
     public RectTransform viewFrame;
     public RectTransform playerResultContainer;
     public RectTransform npcResultContainer;
+
+    public TextMeshProUGUI usernameText;
     
     public Transform accessoriesContainer;
     
@@ -22,6 +26,8 @@ public class ViewPortManager : Singleton<ViewPortManager>
         viewPortBounds = viewPortImage.sprite.bounds;
         
         InteractionChannel.onImageReleased += OnImageReleased;
+        
+        HideUsername();
     }
 
     private void OnDisable()
@@ -62,15 +68,28 @@ public class ViewPortManager : Singleton<ViewPortManager>
 
     public void ShowNPCResult(GameObject imageResult)
     {
-         Instantiate(imageResult, npcResultContainer);
+        Instantiate(imageResult, npcResultContainer);
     }
     
     public void HideNPCResult()
     {
+        HideUsername();
         if(npcResultContainer.childCount > 0)
             Destroy(npcResultContainer.GetChild(0).gameObject); 
     }
 
+    public void ShowUsername(string username, Color color)
+    {
+        usernameText.enabled = true;
+        usernameText.text = username;
+        usernameText.color = color;
+    }
+    
+    public void HideUsername()
+    {
+        usernameText.enabled = false;
+    }
+    
     public void DeleteBaseImage()
     {
         if(_baseImage != null)

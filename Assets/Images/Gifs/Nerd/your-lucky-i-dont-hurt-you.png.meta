@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: 6f4bacffc26704e479076af061347635
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a743f22321a64e4bbec05dc53c92365
+      internalID: 1135572825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_1
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9905b1fd407caa641bb687a3cab02c84
+      internalID: 1732268768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0386bdda97c11c74fb46a5e9d7adf843
+      internalID: -1118029889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_3
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b7d364232eefd43b10ae4a3bd4ce3e
+      internalID: -1871688827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_4
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed15b898514e73429fe267c3f8855ba
+      internalID: -1924383558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_5
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5173b1b4d47b54bb1634359f8f0e01
+      internalID: -823881891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_6
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 1155
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be97ae4c5d53d8847bcf0d834e168352
+      internalID: -814745499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd8320c416ba304eb5eb0afb37008e3
+      internalID: -1913054098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_8
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9090317d50627be4a81b72f8a5de7e9a
+      internalID: -1896830936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_9
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ad596f0fb570c4bbdd33853ef7b105
+      internalID: -1491101392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_10
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d0af99dd9985f42b75f873ba41c2d7
+      internalID: -2074077203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_11
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5306689fe185baf4d88eca2aa19dde8a
+      internalID: -1079321204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_12
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481fc8c1f29ec3b459a843b40e0d84e5
+      internalID: -2120803422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_13
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 770
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f6cbbab9c657f46a9d3d8383bbd65d
+      internalID: 1104843744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aada6ffa7e9b5f94584256480326248b
+      internalID: -1991900540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_15
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d1f2b7ab16bd54582b2bf078bee357
+      internalID: 1000467830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_16
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cf7e0a460ef0d44ab8adbba6925974
+      internalID: 174426279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_17
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cc2f2232b950742b7d2690aec78aca
+      internalID: -824591310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_18
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba701f0f52ccec4b8902d735208b86c
+      internalID: -1510980506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_19
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739397e7ba3bd8449ac2904160562f3e
+      internalID: 1326311091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_20
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 385
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0504bca4cf32c2d4bb3f9d0e74247b32
+      internalID: 1422067548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e17dc226816ff449156681bb8acc5a
+      internalID: -1975939668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_22
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf70235b697e65142a00a282012f145b
+      internalID: 1001290459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_23
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283bbaf205155dc4f8c6415f0e7ddba8
+      internalID: -256108535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_24
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecb1e87260450c438ec8a6406a0064e
+      internalID: -1237231835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_25
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9b06b2ab9163049804d0ebf163abe4
+      internalID: 754501329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_26
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504fc3feca591a84892e63a5fe04dccb
+      internalID: 1477290290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: your-lucky-i-dont-hurt-you_27
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 0
+        width: 498
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1b6a7e71f75c47b802492a9d80240
+      internalID: 849758532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      your-lucky-i-dont-hurt-you_0: 1135572825
+      your-lucky-i-dont-hurt-you_1: 1732268768
+      your-lucky-i-dont-hurt-you_10: -2074077203
+      your-lucky-i-dont-hurt-you_11: -1079321204
+      your-lucky-i-dont-hurt-you_12: -2120803422
+      your-lucky-i-dont-hurt-you_13: 1104843744
+      your-lucky-i-dont-hurt-you_14: -1991900540
+      your-lucky-i-dont-hurt-you_15: 1000467830
+      your-lucky-i-dont-hurt-you_16: 174426279
+      your-lucky-i-dont-hurt-you_17: -824591310
+      your-lucky-i-dont-hurt-you_18: -1510980506
+      your-lucky-i-dont-hurt-you_19: 1326311091
+      your-lucky-i-dont-hurt-you_2: -1118029889
+      your-lucky-i-dont-hurt-you_20: 1422067548
+      your-lucky-i-dont-hurt-you_21: -1975939668
+      your-lucky-i-dont-hurt-you_22: 1001290459
+      your-lucky-i-dont-hurt-you_23: -256108535
+      your-lucky-i-dont-hurt-you_24: -1237231835
+      your-lucky-i-dont-hurt-you_25: 754501329
+      your-lucky-i-dont-hurt-you_26: 1477290290
+      your-lucky-i-dont-hurt-you_27: 849758532
+      your-lucky-i-dont-hurt-you_3: -1871688827
+      your-lucky-i-dont-hurt-you_4: -1924383558
+      your-lucky-i-dont-hurt-you_5: -823881891
+      your-lucky-i-dont-hurt-you_6: -814745499
+      your-lucky-i-dont-hurt-you_7: -1913054098
+      your-lucky-i-dont-hurt-you_8: -1896830936
+      your-lucky-i-dont-hurt-you_9: -1491101392
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
