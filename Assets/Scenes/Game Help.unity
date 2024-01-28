@@ -1774,18 +1774,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1309992619}
     m_Modifications:
-    - target: {fileID: 451335105170132121, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: waitAfterShelfShowed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 451335105170132121, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: waitAfterDecorTimeEnded
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 451335105170132121, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: waitAfterBaseImageShowed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
       propertyPath: appUI
       value: 
@@ -1794,18 +1782,6 @@ PrefabInstance:
       propertyPath: serverUI
       value: 
       objectReference: {fileID: 1579961414}
-    - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: waitToStart
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
-      propertyPath: startGameOnPlay
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4711478730572135829, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -2108,7 +2084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5261907037728587660, guid: 6414dc053ef4cc94ba143029f367f7c8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6439078725244035429, guid: 6414dc053ef4cc94ba143029f367f7c8, type: 3}
       propertyPath: m_Camera
@@ -2120,10 +2096,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495421852259678624, guid: 6414dc053ef4cc94ba143029f367f7c8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7495421852259678624, guid: 6414dc053ef4cc94ba143029f367f7c8, type: 3}
-      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8312807869342170238, guid: 6414dc053ef4cc94ba143029f367f7c8, type: 3}

@@ -50,8 +50,12 @@ MonoBehaviour:
   rounds:
   - {fileID: 11400000, guid: ef7f78d3e90edf742ad9e4a7f28d5fe8, type: 2}
   - {fileID: 11400000, guid: 9472cfd6904c06c4ba374cbb7b35a8f9, type: 2}
+  serverUI: {fileID: 0}
+  appUI: {fileID: 0}
   roundIndex: 0
   roundController: {fileID: 5913675851584282580}
+  startGameOnPlay: 0
+  waitToStart: 35
 --- !u!114 &5913675851584282580
 MonoBehaviour:
   m_ObjectHideFlags: 0
