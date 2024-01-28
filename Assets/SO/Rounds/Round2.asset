@@ -18,10 +18,10 @@ MonoBehaviour:
   - {fileID: 1934664338888697001, guid: 6e173f08221744a4793d49546d24f973, type: 3}
   - {fileID: 3718373299177956450, guid: 2082decf3e05f3a43b24dfb818dda7ff, type: 3}
   - {fileID: 3614349424358421941, guid: d4f74e8c54b100e4bb54836fccd06837, type: 3}
-  npcRatings: 02000000030000000100000001000000
-  playerRating: 0
-  roundTime: 2
-  dialogData: {fileID: 0}
+  npcRatings: 020000000300000003000000
+  playerRating: 3
+  roundTime: 30
+  dialogData: {fileID: 11400000, guid: e0a8c3c9d93a7cc409b43b3d09e227fa, type: 2}
   backgrounds:
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}
   - {fileID: 11400000, guid: f47031a72fb2bfd4d856fb6b6f1e2572, type: 2}
