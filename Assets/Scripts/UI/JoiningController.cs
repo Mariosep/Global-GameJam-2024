@@ -9,6 +9,7 @@ public class JoiningController : MonoBehaviour
 {
     public TextMeshProUGUI titleText;
     public GameObject joiningModal;
+    public RectTransform topBarRect;
     public GameObject joiningPanel;
     public GameObject codeVerificationPanel;
     public TMP_InputField codeInputFile;
@@ -24,10 +25,9 @@ public class JoiningController : MonoBehaviour
 
     private void Awake()
     {
-        _joiningRecTransForm = joiningModal.GetComponent<RectTransform>();
         _audioSource = GetComponent<AudioSource>();
-        _offsetDefaultMin = _joiningRecTransForm.offsetMin;
-        _offsetDefaultMax = _joiningRecTransForm.offsetMax;
+        _offsetDefaultMin = topBarRect.offsetMin;
+        _offsetDefaultMax = topBarRect.offsetMax;
     }
 
     public void OnOpenModal(ServerData server)
@@ -87,8 +87,8 @@ public class JoiningController : MonoBehaviour
         joiningPanel.SetActive(false);
         codeVerificationPanel.SetActive(false);
         codeInputFile.text = "";
-        _joiningRecTransForm.offsetMin = _offsetDefaultMin;
-        _joiningRecTransForm.offsetMax = _offsetDefaultMax;
+        topBarRect.offsetMin = _offsetDefaultMin;
+        topBarRect.offsetMax = _offsetDefaultMax;
     }
 
     private void OnDestroy()
