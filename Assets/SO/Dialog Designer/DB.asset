@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8553316026023580352
+--- !u!114 &-8681378130419512413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,29 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
-  m_Name: Port-7ca38bd05e1a55941a7dd8794641220d
+  m_Name: Port-b7476b0b7220afc4aaeabcea6fdae071
   m_EditorClassIdentifier: 
-  id: 7ca38bd05e1a55941a7dd8794641220d
+  id: b7476b0b7220afc4aaeabcea6fdae071
   portName: 
-  originNode: {fileID: -6434102406022987658}
+  originNode: {fileID: -228669988844258122}
   targetNodes: []
---- !u!114 &-8467077296906393060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
-  m_Name: Port-b8c22d71104618d4f81fbb6ec6bda53a
-  m_EditorClassIdentifier: 
-  id: b8c22d71104618d4f81fbb6ec6bda53a
-  portName: 
-  originNode: {fileID: -7721992018233867592}
-  targetNodes:
-  - {fileID: -6434102406022987658}
 --- !u!114 &-8450333735767899125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +30,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: a8f6b7790dc450045bb4ad36b2aa1e2d
   commands: []
---- !u!114 &-7721992018233867592
+--- !u!114 &-8323830478215029274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,27 +39,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5dc96d0a450db24792528a4b013cdbe, type: 3}
-  m_Name: ChoiceNode-abd2506241eaba94cbf632427feada35
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-2fa7afc0bf69d01438af02477f3b613b
   m_EditorClassIdentifier: 
-  guid: abd2506241eaba94cbf632427feada35
-  position: {x: 948.8159, y: 124.69499}
-  group: {fileID: 0}
-  bookmark: {fileID: 0}
-  inputPorts:
-  - {fileID: -3920579885863350358}
-  outputPorts:
-  - {fileID: 4889857868332165141}
-  - {fileID: -8467077296906393060}
-  actor: {fileID: 3832362148817481437}
-  message: Tu que eres carajote o que?
-  delayTime: 0
-  requirements: {fileID: 2333740873505494417}
-  actionList: {fileID: -4358805994252112444}
-  choices:
-  - {fileID: -5866693698762037284}
-  defaultPort: {fileID: 4889857868332165141}
-  defaultActionList: {fileID: 2672158775707212716}
+  id: 2fa7afc0bf69d01438af02477f3b613b
+  commands: []
+--- !u!114 &-8275386996724751812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-021a060273a119d4fae248568de92ef2
+  m_EditorClassIdentifier: 
+  id: 021a060273a119d4fae248568de92ef2
+  commands: []
 --- !u!114 &-7393886236056421317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,7 +71,7 @@ MonoBehaviour:
   m_Name: CompleteNode-d4be196a8e0822d42b0a63ed6bb802e8
   m_EditorClassIdentifier: 
   guid: d4be196a8e0822d42b0a63ed6bb802e8
-  position: {x: 1617.5211, y: 178.88002}
+  position: {x: 2375.2002, y: 248.00003}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -110,9 +91,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: d89bfef3cd905b24586ae51196cd692e
   actorImage: {fileID: 21300000, guid: 3378d0461e822754db59aa920d080fc6, type: 3}
-  fullName: Carajote12
+  fullName: DaVinci
   description: defaultDesc
-  bgColor: {r: 0.23641203, g: 0.7660377, b: 0.13152722, a: 1}
+  bgColor: {r: 0.24113198, g: 0.44420645, b: 0.8037735, a: 1}
 --- !u!114 &-7180965163520947851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +109,22 @@ MonoBehaviour:
   id: 55bc622eeb99b4f43b6afea3f30e2d47
   portName: 
   originNode: {fileID: 0}
+  targetNodes: []
+--- !u!114 &-6884433758805938101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-ed9a905572ab7f84ca59590e1f5fe0e3
+  m_EditorClassIdentifier: 
+  id: ed9a905572ab7f84ca59590e1f5fe0e3
+  portName: 
+  originNode: {fileID: 4940499856054203678}
   targetNodes: []
 --- !u!114 &-6550998355613766785
 MonoBehaviour:
@@ -148,7 +145,7 @@ MonoBehaviour:
   inputPorts:
   - {fileID: 5379345817959883614}
   outputPorts: []
---- !u!114 &-6434102406022987658
+--- !u!114 &-6394393946843152164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,39 +154,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
-  m_Name: DialogNode-5c6d7289b9912204bb913df39aae3243
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-c12033d6937bb4a4a832d0781ccc0302
   m_EditorClassIdentifier: 
-  guid: 5c6d7289b9912204bb913df39aae3243
-  position: {x: 1267.4, y: 169.11998}
-  group: {fileID: 0}
-  bookmark: {fileID: 0}
-  inputPorts:
-  - {fileID: -8553316026023580352}
-  outputPorts:
-  - {fileID: 7376804934996184015}
-  actor: {fileID: -7195261011611767272}
-  message: Correcto
-  delayTime: 0
-  requirements: {fileID: 3929004718087416887}
-  actionList: {fileID: 3425727509608908293}
---- !u!114 &-5866693698762037284
+  id: c12033d6937bb4a4a832d0781ccc0302
+  conditions: []
+--- !u!114 &-6147317162820744662
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fcdbbda8660e124a86a4a5bf54b4f31, type: 3}
-  m_Name: Choice-99f087ca39ecb6c46817bbaf98ceb83d
+  m_Script: {fileID: 11500000, guid: 755900283b136124d8ad835b2dc923bc, type: 3}
+  m_Name: Actor
   m_EditorClassIdentifier: 
-  guid: 99f087ca39ecb6c46817bbaf98ceb83d
-  choiceMessage: Si
-  port: {fileID: -8467077296906393060}
-  requirements: {fileID: -181864539968384026}
-  actionList: {fileID: -2621876115596078250}
+  guid: 676713e8e91c0584c9d3c0b16ab27f57
+  actorImage: {fileID: 0}
+  fullName: Ryan42
+  description: defaultDesc
+  bgColor: {r: 0.28931928, g: 0.7207546, b: 0.042157307, a: 0}
 --- !u!114 &-5124217131255582624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +192,45 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: 0}
   targetNodes: []
+--- !u!114 &-5077586398784118016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-c12033d6937bb4a4a832d0781ccc0302
+  m_EditorClassIdentifier: 
+  guid: c12033d6937bb4a4a832d0781ccc0302
+  position: {x: 1564.2402, y: 209.59998}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: 3671181882818730497}
+  outputPorts:
+  - {fileID: -2220689632110069191}
+  actor: {fileID: 1447130861419194038}
+  message: Sup dudes!
+  delayTime: 0
+  requirements: {fileID: -6394393946843152164}
+  actionList: {fileID: 5228815208319483951}
+--- !u!114 &-4682799437341852838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-9433d3da36284704a8bac5e92903a60f
+  m_EditorClassIdentifier: 
+  id: 9433d3da36284704a8bac5e92903a60f
+  commands: []
 --- !u!114 &-4595050254157023769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,20 +247,6 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: -7721992018233867592}
   targetNodes: []
---- !u!114 &-4358805994252112444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
-  m_Name: commandList-abd2506241eaba94cbf632427feada35
-  m_EditorClassIdentifier: 
-  id: abd2506241eaba94cbf632427feada35
-  commands: []
 --- !u!114 &-4332403607565414394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +263,24 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: -1292772202278429522}
   targetNodes:
-  - {fileID: 5323941248098172038}
+  - {fileID: 4940499856054203678}
+--- !u!114 &-4285855570208144042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-173f86afecf6c1c4188b0ee55ca0f465
+  m_EditorClassIdentifier: 
+  id: 173f86afecf6c1c4188b0ee55ca0f465
+  portName: 
+  originNode: {fileID: -3884387870767394273}
+  targetNodes:
+  - {fileID: -238573973522875966}
 --- !u!114 &-4003811789405961975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ca8620971773324409244fb8ecc7754e
   commands: []
---- !u!114 &-3920579885863350358
+--- !u!114 &-3884387870767394273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,13 +304,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
-  m_Name: Port-24d04f5e81404ea4a90055e743992c73
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-021a060273a119d4fae248568de92ef2
   m_EditorClassIdentifier: 
-  id: 24d04f5e81404ea4a90055e743992c73
-  portName: 
-  originNode: {fileID: -7721992018233867592}
-  targetNodes: []
+  guid: 021a060273a119d4fae248568de92ef2
+  position: {x: 910.3999, y: 179.20004}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: 6107183220638320771}
+  outputPorts:
+  - {fileID: -4285855570208144042}
+  actor: {fileID: 3832362148817481437}
+  message: There is a noob in the room OMG
+  delayTime: 0
+  requirements: {fileID: 5257277555194911272}
+  actionList: {fileID: -8275386996724751812}
 --- !u!114 &-3454358894529570042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +334,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: fd025221b7f7d7141a938e7e10726ea4
   commands: []
---- !u!114 &-2621876115596078250
+--- !u!114 &-3431288988987163983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-8d1086086475b004999dbeed57d67efc
+  m_EditorClassIdentifier: 
+  guid: 8d1086086475b004999dbeed57d67efc
+  position: {x: 1892.8002, y: 209.60007}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: -370182873724751615}
+  outputPorts:
+  - {fileID: 1837716429409979993}
+  actor: {fileID: 3832362148817481437}
+  message: hi poop
+  delayTime: 0
+  requirements: {fileID: 8496602991493265401}
+  actionList: {fileID: 750413360721273238}
+--- !u!114 &-2939043274408588053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,10 +369,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
-  m_Name: commandList-99f087ca39ecb6c46817bbaf98ceb83d
+  m_Name: commandList-e25a0ffc47970ce48b6a58219cbd7c8c
   m_EditorClassIdentifier: 
-  id: 99f087ca39ecb6c46817bbaf98ceb83d
+  id: e25a0ffc47970ce48b6a58219cbd7c8c
   commands: []
+--- !u!114 &-2220689632110069191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-97fc9eda8cb2b604394302892d314111
+  m_EditorClassIdentifier: 
+  id: 97fc9eda8cb2b604394302892d314111
+  portName: 
+  originNode: {fileID: -5077586398784118016}
+  targetNodes: []
 --- !u!114 &-2199544156170897511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +436,7 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: -1307282080607092919}
   targetNodes:
-  - {fileID: -7721992018233867592}
+  - {fileID: -3884387870767394273}
 --- !u!114 &-1408062715504740508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +474,7 @@ MonoBehaviour:
   m_Name: DialogNode-6ae988ac942bcf04ab85e9874425eddb
   m_EditorClassIdentifier: 
   guid: 6ae988ac942bcf04ab85e9874425eddb
-  position: {x: 580.364, y: 179.2}
+  position: {x: 569.6, y: 179.19995}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts:
@@ -404,7 +482,7 @@ MonoBehaviour:
   outputPorts:
   - {fileID: -1417963068917903387}
   actor: {fileID: -7195261011611767272}
-  message: Me la pela en vd
+  message: Well, you'll have to prove it
   delayTime: 0
   requirements: {fileID: -401781690019749921}
   actionList: {fileID: 7529187537170424098}
@@ -421,7 +499,7 @@ MonoBehaviour:
   m_Name: StartNode-708bcd7366fb6fb4b9648719887d19e4
   m_EditorClassIdentifier: 
   guid: 708bcd7366fb6fb4b9648719887d19e4
-  position: {x: 0, y: 200}
+  position: {x: -287.68002, y: 204.00003}
   group: {fileID: 0}
   bookmark: {fileID: 0}
   inputPorts: []
@@ -458,6 +536,22 @@ MonoBehaviour:
   id: 1cc2b86d95eb9f9478a378783820d163
   portName: 
   originNode: {fileID: 5323941248098172038}
+  targetNodes: []
+--- !u!114 &-949120058128854524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-98fd18ffeae3a4045acf258fe306907a
+  m_EditorClassIdentifier: 
+  id: 98fd18ffeae3a4045acf258fe306907a
+  portName: 
+  originNode: {fileID: -238573973522875966}
   targetNodes: []
 --- !u!114 &-701629586411637758
 MonoBehaviour:
@@ -514,7 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6ae988ac942bcf04ab85e9874425eddb
   conditions: []
---- !u!114 &-181864539968384026
+--- !u!114 &-370182873724751615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -523,11 +617,63 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
-  m_Name: requirements-99f087ca39ecb6c46817bbaf98ceb83d
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-ab2a758b57dc1e04789d0565b4189794
   m_EditorClassIdentifier: 
-  id: 99f087ca39ecb6c46817bbaf98ceb83d
-  conditions: []
+  id: ab2a758b57dc1e04789d0565b4189794
+  portName: 
+  originNode: {fileID: -3431288988987163983}
+  targetNodes: []
+--- !u!114 &-238573973522875966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-2fa7afc0bf69d01438af02477f3b613b
+  m_EditorClassIdentifier: 
+  guid: 2fa7afc0bf69d01438af02477f3b613b
+  position: {x: 1241.5999, y: 180.79999}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: -949120058128854524}
+  outputPorts:
+  - {fileID: 6520345032674403670}
+  actor: {fileID: -7195261011611767272}
+  message: Don't be toxic pls, that's not how we're going to grow the game community
+  delayTime: 0
+  requirements: {fileID: 8299451017354652268}
+  actionList: {fileID: -8323830478215029274}
+--- !u!114 &-228669988844258122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-e25a0ffc47970ce48b6a58219cbd7c8c
+  m_EditorClassIdentifier: 
+  guid: e25a0ffc47970ce48b6a58219cbd7c8c
+  position: {x: 2156, y: 338.4}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: 6146878298614729198}
+  outputPorts:
+  - {fileID: -8681378130419512413}
+  actor: {fileID: 3832362148817481437}
+  message: 
+  delayTime: 0
+  requirements: {fileID: 43118920465315357}
+  actionList: {fileID: -2939043274408588053}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +695,66 @@ MonoBehaviour:
   - {fileID: 3832362148817481437}
   - {fileID: -7195261011611767272}
   - {fileID: 1447130861419194038}
+  - {fileID: -6147317162820744662}
+--- !u!114 &43118920465315357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-e25a0ffc47970ce48b6a58219cbd7c8c
+  m_EditorClassIdentifier: 
+  id: e25a0ffc47970ce48b6a58219cbd7c8c
+  conditions: []
+--- !u!114 &497247171355192065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-9455d1ac470350649be38359e8be0ee8
+  m_EditorClassIdentifier: 
+  id: 9455d1ac470350649be38359e8be0ee8
+  portName: 
+  originNode: {fileID: 4940499856054203678}
+  targetNodes:
+  - {fileID: 5323941248098172038}
+--- !u!114 &750413360721273238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-8d1086086475b004999dbeed57d67efc
+  m_EditorClassIdentifier: 
+  id: 8d1086086475b004999dbeed57d67efc
+  commands: []
+--- !u!114 &880862417341010966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-9433d3da36284704a8bac5e92903a60f
+  m_EditorClassIdentifier: 
+  id: 9433d3da36284704a8bac5e92903a60f
+  conditions: []
 --- !u!114 &1447130861419194038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -563,9 +769,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: 050726e1da0abdd4a9eb3071673c4d8a
   actorImage: {fileID: 21300000, guid: 53bc3c14b5965f546a05f173fb367329, type: 3}
-  fullName: Popopo
+  fullName: PoopMaster
   description: defaultDesc
-  bgColor: {r: 0.7509433, g: 0.13460296, b: 0.63746965, a: 1}
+  bgColor: {r: 0.5396226, g: 0.36438727, b: 0.22704872, a: 1}
 --- !u!114 &1682883436016886117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +796,7 @@ MonoBehaviour:
   description: Default Desc
   guid: 1bb2856b59534ec4cb5422278bcaac4a
   conversationState: 0
---- !u!114 &2333740873505494417
+--- !u!114 &1837716429409979993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -599,11 +805,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
-  m_Name: requirements-abd2506241eaba94cbf632427feada35
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-c4c25fdb162abc946ae571a38230128c
   m_EditorClassIdentifier: 
-  id: abd2506241eaba94cbf632427feada35
-  conditions: []
+  id: c4c25fdb162abc946ae571a38230128c
+  portName: 
+  originNode: {fileID: -3431288988987163983}
+  targetNodes: []
 --- !u!114 &2439056145912209879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,34 +834,6 @@ MonoBehaviour:
   - {fileID: 3625984702825912211}
   - {fileID: -1408062715504740508}
   - {fileID: 1682883436016886117}
---- !u!114 &2672158775707212716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
-  m_Name: commandList-abd2506241eaba94cbf632427feada35
-  m_EditorClassIdentifier: 
-  id: abd2506241eaba94cbf632427feada35
-  commands: []
---- !u!114 &3425727509608908293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
-  m_Name: commandList-5c6d7289b9912204bb913df39aae3243
-  m_EditorClassIdentifier: 
-  id: 5c6d7289b9912204bb913df39aae3243
-  commands: []
 --- !u!114 &3625984702825912211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +858,22 @@ MonoBehaviour:
   description: Default Desc
   guid: 1f9d9f8f93811a24f92f294a7725222a
   conversationState: 0
+--- !u!114 &3671181882818730497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-f2399e22625245b47ab93053a63f85df
+  m_EditorClassIdentifier: 
+  id: f2399e22625245b47ab93053a63f85df
+  portName: 
+  originNode: {fileID: -5077586398784118016}
+  targetNodes: []
 --- !u!114 &3811644901224974178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,23 +904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: 6d6a5b47fad7d6145a731ef9f84de0cb
   actorImage: {fileID: 21300000, guid: ea7dc199dafed8f43b48b45340f7312c, type: 3}
-  fullName: Gilipollas1
+  fullName: xXCrackXx
   description: defaultDesc
-  bgColor: {r: 0.20090416, g: 0.5442235, b: 0.7660377, a: 1}
---- !u!114 &3929004718087416887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
-  m_Name: requirements-5c6d7289b9912204bb913df39aae3243
-  m_EditorClassIdentifier: 
-  id: 5c6d7289b9912204bb913df39aae3243
-  conditions: []
+  bgColor: {r: 0.78867924, g: 0.20684223, b: 0.78301835, a: 1}
 --- !u!114 &4151826899475498741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,7 +921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: a8f6b7790dc450045bb4ad36b2aa1e2d
   conditions: []
---- !u!114 &4889857868332165141
+--- !u!114 &4940499856054203678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,13 +930,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
-  m_Name: Port-1da228d6b068ea0449afb9c45fd7e746
+  m_Script: {fileID: 11500000, guid: e07d3627ea25a1f45b600d8a90624fce, type: 3}
+  m_Name: DialogNode-9433d3da36284704a8bac5e92903a60f
   m_EditorClassIdentifier: 
-  id: 1da228d6b068ea0449afb9c45fd7e746
-  portName: 
-  originNode: {fileID: -7721992018233867592}
-  targetNodes: []
+  guid: 9433d3da36284704a8bac5e92903a60f
+  position: {x: -84.79999, y: 179.19998}
+  group: {fileID: 0}
+  bookmark: {fileID: 0}
+  inputPorts:
+  - {fileID: -6884433758805938101}
+  outputPorts:
+  - {fileID: 497247171355192065}
+  actor: {fileID: -7195261011611767272}
+  message: Hi guys!! :D
+  delayTime: 0
+  requirements: {fileID: 880862417341010966}
+  actionList: {fileID: -4682799437341852838}
+--- !u!114 &5228815208319483951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b2e896cfcc40699026c8b34f150133, type: 3}
+  m_Name: commandList-c12033d6937bb4a4a832d0781ccc0302
+  m_EditorClassIdentifier: 
+  id: c12033d6937bb4a4a832d0781ccc0302
+  commands: []
+--- !u!114 &5257277555194911272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-021a060273a119d4fae248568de92ef2
+  m_EditorClassIdentifier: 
+  id: 021a060273a119d4fae248568de92ef2
+  conditions: []
 --- !u!114 &5258399593801595855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,7 +1020,7 @@ MonoBehaviour:
   outputPorts:
   - {fileID: 5919247985378317479}
   actor: {fileID: 3832362148817481437}
-  message: Hola, soy el gilipollas
+  message: Hey guys, the winner has arrived :)
   delayTime: 0
   requirements: {fileID: 8403768502267367985}
   actionList: {fileID: -3454358894529570042}
@@ -842,8 +1061,12 @@ MonoBehaviour:
   - {fileID: -7393886236056421317}
   - {fileID: 5323941248098172038}
   - {fileID: -1307282080607092919}
-  - {fileID: -7721992018233867592}
-  - {fileID: -6434102406022987658}
+  - {fileID: 4940499856054203678}
+  - {fileID: -3884387870767394273}
+  - {fileID: -238573973522875966}
+  - {fileID: -5077586398784118016}
+  - {fileID: -3431288988987163983}
+  - {fileID: -228669988844258122}
   groups: []
   bookmarks: []
   runningNode: {fileID: 0}
@@ -911,6 +1134,55 @@ MonoBehaviour:
   portName: 
   originNode: {fileID: -1307282080607092919}
   targetNodes: []
+--- !u!114 &6107183220638320771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-0a6d89157f99be243bec49f1cc92f2d5
+  m_EditorClassIdentifier: 
+  id: 0a6d89157f99be243bec49f1cc92f2d5
+  portName: 
+  originNode: {fileID: -3884387870767394273}
+  targetNodes: []
+--- !u!114 &6146878298614729198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-46326123d9661c6408a71d197921beee
+  m_EditorClassIdentifier: 
+  id: 46326123d9661c6408a71d197921beee
+  portName: 
+  originNode: {fileID: -228669988844258122}
+  targetNodes: []
+--- !u!114 &6520345032674403670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
+  m_Name: Port-3b5d78209dd494c4f9e8080aa6ab8cf0
+  m_EditorClassIdentifier: 
+  id: 3b5d78209dd494c4f9e8080aa6ab8cf0
+  portName: 
+  originNode: {fileID: -238573973522875966}
+  targetNodes:
+  - {fileID: -5077586398784118016}
 --- !u!114 &7060817216078147841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,23 +1207,6 @@ MonoBehaviour:
   description: Default Desc
   guid: 77afda26ba3aae34585b5cfd49c1ac2d
   conversationState: 0
---- !u!114 &7376804934996184015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87fd818203f8d2d498527079c2743b30, type: 3}
-  m_Name: Port-b330dc7c4e9327344ace3fda5f4edaff
-  m_EditorClassIdentifier: 
-  id: b330dc7c4e9327344ace3fda5f4edaff
-  portName: 
-  originNode: {fileID: -6434102406022987658}
-  targetNodes:
-  - {fileID: -7393886236056421317}
 --- !u!114 &7529187537170424098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,6 +1238,20 @@ MonoBehaviour:
   originNode: {fileID: 9027178926917303576}
   targetNodes:
   - {fileID: -701629586411637758}
+--- !u!114 &8299451017354652268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-2fa7afc0bf69d01438af02477f3b613b
+  m_EditorClassIdentifier: 
+  id: 2fa7afc0bf69d01438af02477f3b613b
+  conditions: []
 --- !u!114 &8403768502267367985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,6 +1265,20 @@ MonoBehaviour:
   m_Name: requirements-fd025221b7f7d7141a938e7e10726ea4
   m_EditorClassIdentifier: 
   id: fd025221b7f7d7141a938e7e10726ea4
+  conditions: []
+--- !u!114 &8496602991493265401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169a2aee4f144734ad9e6758ddbaa8af, type: 3}
+  m_Name: requirements-8d1086086475b004999dbeed57d67efc
+  m_EditorClassIdentifier: 
+  id: 8d1086086475b004999dbeed57d67efc
   conditions: []
 --- !u!114 &9016024844068843267
 MonoBehaviour:
