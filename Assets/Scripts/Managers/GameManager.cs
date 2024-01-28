@@ -18,12 +18,12 @@ public class GameManager : Singleton<GameManager>
     
     private void Awake()
     {
-        ServerChannel.onServerJoined += StartGame;
+        ServerChannel.onServerJoined += WaitingToStart;
     }
 
     private void OnDestroy()
     {
-        ServerChannel.onServerJoined -= StartGame;
+        ServerChannel.onServerJoined -= WaitingToStart;
     }
     
     public void OnCloseGame()
@@ -34,11 +34,19 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         if (startGameOnPlay)
-            StartCoroutine(WaitingToStart());
+            StartCoroutine(CO_WaitingToStart());
     }
 
-    private IEnumerator WaitingToStart()
+    private void WaitingToStart()
     {
+        StartCoroutine(CO_WaitingToStart());
+    }
+    
+    private IEnumerator CO_WaitingToStart()
+    {
+        serverUI.SetActive(false);
+        appUI.SetActive(true);
+        
         RoundChannel.onWaitToStart?.Invoke();
         
         WaitingToStartUI.Instance.ShowWaitingPanel();
@@ -54,9 +62,6 @@ public class GameManager : Singleton<GameManager>
     
     private void StartGame()
     {
-        serverUI.SetActive(false);
-        appUI.SetActive(true);
-        
         roundIndex = 0;
         StartNextRound();
         
