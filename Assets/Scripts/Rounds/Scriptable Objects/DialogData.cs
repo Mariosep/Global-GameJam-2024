@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "DialogData", fileName = "DialogData")]
 public class DialogData : ScriptableObject
 {
+    public ConversationTree waitToStartDialog;
     public ConversationTree preDecorPhaseDialog;
     public ConversationTree decorPhaseDialog;
     public ConversationTree postDecorPhaseDialog;

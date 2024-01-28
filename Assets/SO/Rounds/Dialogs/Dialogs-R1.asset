@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2757b4de29ca47e3b227cda49127a855, type: 3}
   m_Name: Dialogs-R1
   m_EditorClassIdentifier: 
-  preDecorPhaseDialog: {fileID: 5865159591326762059, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  waitToStartDialog: {fileID: 5865159591326762059, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  preDecorPhaseDialog: {fileID: -5591612632996059666, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   decorPhaseDialog: {fileID: 5920388982891068795, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   postDecorPhaseDialog: {fileID: 7060817216078147841, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   preRatePhaseDialog: {fileID: 3625984702825912211, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}

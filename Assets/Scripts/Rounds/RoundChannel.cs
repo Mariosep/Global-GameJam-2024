@@ -2,6 +2,7 @@ using System;
 
 public static class RoundChannel
 {
+    public static Action onWaitToStart;
     public static Action<RoundController> onRoundStarted;
     public static Action<RoundController> onRoundCompleted;
     public static Action onPreDecorPhase;

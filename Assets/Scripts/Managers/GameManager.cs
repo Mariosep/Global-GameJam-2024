@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ public class GameManager : Singleton<GameManager>
     public RoundController roundController;
 
     public bool startGameOnPlay;
+
+    public int waitToStart;
     
     private void Awake()
     {
@@ -25,10 +28,25 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
-        if(startGameOnPlay)
-            StartGame();
+        if (startGameOnPlay)
+            StartCoroutine(WaitingToStart());
     }
 
+    private IEnumerator WaitingToStart()
+    {
+        RoundChannel.onWaitToStart?.Invoke();
+        
+        WaitingToStartUI.Instance.ShowWaitingPanel();
+        
+        yield return new WaitForSeconds(waitToStart);
+        
+        WaitingToStartUI.Instance.HideWaitingPanel();
+        
+        yield return new WaitForSeconds(3);
+        
+        StartGame();
+    }
+    
     private void StartGame()
     {
         serverUI.SetActive(false);

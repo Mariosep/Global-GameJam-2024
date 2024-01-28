@@ -7,10 +7,14 @@ public class DialogManager : MonoBehaviour
     
     private DialogData _dialogData;
     
+    public ConversationTree waitToStartDialog;
+    
     private void Awake()
     {
         if(!disableDialogs)
         {
+            RoundChannel.onWaitToStart += OnWaitToStart;
+            
             RoundChannel.onRoundStarted += OnRoundStarted;
 
             RoundChannel.onPreDecorPhase += OnPreDecorPhase;
@@ -25,6 +29,7 @@ public class DialogManager : MonoBehaviour
 
     private void OnDestroy()
     {
+        RoundChannel.onWaitToStart -= OnWaitToStart;
         RoundChannel.onRoundStarted -= OnRoundStarted;
 
         RoundChannel.onPreDecorPhase -= OnPreDecorPhase;
@@ -34,6 +39,12 @@ public class DialogManager : MonoBehaviour
         RoundChannel.onPreRatePhase -= OnPreDecorPhase;
         RoundChannel.onRatePhaseStarted -= OnDecorPhaseStarted;
         RoundChannel.onPostRatePhase -= OnPostDecorPhase;
+    }
+    
+    private void OnWaitToStart()
+    {
+        if (waitToStartDialog)
+            DDEvents.onStartConversation?.Invoke(waitToStartDialog);
     }
     
     private void OnRoundStarted(RoundController roundController)

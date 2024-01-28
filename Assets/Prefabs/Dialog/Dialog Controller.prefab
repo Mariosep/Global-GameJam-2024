@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357427741135395489}
   - component: {fileID: 2785063328848362200}
-  - component: {fileID: 5950305874249091211}
-  - component: {fileID: 3566649269062568848}
+  - component: {fileID: 4777101514182228936}
   m_Layer: 0
   m_Name: Dialog Controller
   m_TagString: Untagged
@@ -46,13 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd38c908c5460d4ab42cdf10f44bf3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogSystemDatabase: {fileID: 11400000, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
+  dialogSystemDatabase: {fileID: 11400000, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   inputKeys: []
   dialogTimer: 1
   dialogTime: 0
-  hasNoResponse: 0
-  noResponseTime: 2
---- !u!114 &5950305874249091211
+  hasNoResponse: 1
+  noResponseTime: 7
+--- !u!114 &4777101514182228936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,103 +60,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1181697899990276076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49d5d4b62710ac4dae2e6121ec056ea, type: 3}
+  m_Script: {fileID: 11500000, guid: bc1d7ef8800e22d44b09c76865d7b77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationTree: {fileID: -606996428101015881, guid: 8f52d4bd10721da48a12a2877c58bb60, type: 2}
---- !u!82 &3566649269062568848
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1181697899990276076}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e0093ef06eb43774b9098ee2a123ba2e, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.148
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  disableDialogs: 0
+  waitToStartDialog: {fileID: 5865159591326762059, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
