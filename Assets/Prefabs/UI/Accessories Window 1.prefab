@@ -1111,6 +1111,7 @@ GameObject:
   - component: {fileID: 1509801897635055229}
   - component: {fileID: 3923384377674043520}
   - component: {fileID: 9208356818808949335}
+  - component: {fileID: 3158986853852450046}
   - component: {fileID: 4448624183051069240}
   m_Layer: 5
   m_Name: Dropdown
@@ -1180,6 +1181,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3158986853852450046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382399982429035416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598be058e9450df4a8e8e5269c1c027d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4448624183051069240
 MonoBehaviour:
   m_ObjectHideFlags: 0

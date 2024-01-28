@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
@@ -19,6 +20,18 @@ public class BackgroundManager : MonoBehaviour
         GameObject imageGo = GameObject.FindGameObjectWithTag("View Image BG");
         _rectTransform = imageGo.GetComponent<RectTransform>();
         _image = imageGo.GetComponent<Image>();
+    }
+
+    private void Update()
+    {
+        if (!MoveTool.Instance.canMove)
+        {
+            dropdownMenu.interactable = false;
+        }
+        else
+        {
+            dropdownMenu.interactable = true;
+        }
     }
 
     public void ActionToCall(int selectedIndex)
