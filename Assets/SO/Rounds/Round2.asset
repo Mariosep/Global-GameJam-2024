@@ -23,6 +23,6 @@ MonoBehaviour:
   roundTime: 30
   dialogData: {fileID: 0}
   backgrounds:
-  - {fileID: 11400000, guid: 5926cbc2be3ede04fbc68832d576f478, type: 2}
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}
-  - {fileID: 11400000, guid: d570d5e28c77aa946a5ad2d75ac225ed, type: 2}
+  - {fileID: 11400000, guid: f47031a72fb2bfd4d856fb6b6f1e2572, type: 2}
+  - {fileID: 11400000, guid: 5fcebff857b95664886bb29e688a0470, type: 2}

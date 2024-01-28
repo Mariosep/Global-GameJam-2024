@@ -67,9 +67,15 @@ public class RatePhase : Singleton<RatePhase>, IPhase
         ViewPortManager.Instance.ShowPlayerResult();
         ViewPortManager.Instance.ShowUsername(playerActor.fullName, playerActor.bgColor);
         
-        yield return new WaitForSeconds(waitAfterResultShowed);
+        //yield return new WaitForSeconds(waitAfterResultShowed);
+        
+        WaitingRateUI.Instance.ShowWaitingRatePanel();
         
         yield return new WaitForSeconds(5f);
+        
+        WaitingRateUI.Instance.HideRatePanel();
+        
+        yield return new WaitForSeconds(waitAfterPlayerHasRated);
         
         RatingObtainedUI.Instance.ShowRatingObtainedPanel();
         
@@ -83,7 +89,7 @@ public class RatePhase : Singleton<RatePhase>, IPhase
         
         yield return new WaitForSeconds(waitAfterRatingHided);
 
-        ViewPortManager.Instance.HidePlayerResult();
+        ViewPortManager.Instance.DestroyPlayerResult();
         
         StartCoroutine(PostPhase());
     }

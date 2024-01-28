@@ -75,6 +75,15 @@ public class ViewPortManager : Singleton<ViewPortManager>
         playerResultContainer.gameObject.SetActive(false);
     }
     
+    public void DestroyPlayerResult()
+    {
+        foreach (Transform child in playerResultContainer.gameObject.transform)
+        {
+            if(child.name != "BG")
+                Destroy(child.gameObject);
+        }
+    }
+    
     public void ShowPlayerResult()
     {
         playerResultContainer.gameObject.SetActive(true);
