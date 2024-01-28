@@ -20,12 +20,18 @@ public class CursorHandler : MonoBehaviour
         
         InteractionChannel.onImageGrabbed += OnImageGrabbed;
         InteractionChannel.onImageReleased += OnImageReleased;
+        
+        InteractionChannel.onPopupGrabbed += OnPopupGrabbed;
+        InteractionChannel.onPopupReleased += OnPopupReleased;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         InteractionChannel.onImageGrabbed -= OnImageGrabbed;
         InteractionChannel.onImageReleased -= OnImageReleased;
+        
+        InteractionChannel.onPopupGrabbed -= OnPopupGrabbed;
+        InteractionChannel.onPopupReleased -= OnPopupReleased;
     }
 
     private void Update()
@@ -48,6 +54,16 @@ public class CursorHandler : MonoBehaviour
     }
 
     private void OnImageGrabbed(Movable imageGrabbed)
+    {
+        Cursor.SetCursor(grabCursor, _hotspot, CursorMode.Auto);
+    }
+    
+    private void OnPopupReleased()
+    {
+        Cursor.SetCursor(defaultCursor,_hotspot, CursorMode.Auto);
+    }
+
+    private void OnPopupGrabbed()
     {
         Cursor.SetCursor(grabCursor, _hotspot, CursorMode.Auto);
     }

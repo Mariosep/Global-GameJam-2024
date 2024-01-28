@@ -1,9 +1,10 @@
 using System;
-using UnityEngine;
 
 public static class InteractionChannel
 {
     public static Action<Movable> onImageGrabbed;
-    public static Action<Movable, Vector2> onImageMoved;
     public static Action<Movable> onImageReleased;
+    
+    public static Action onPopupGrabbed;
+    public static Action onPopupReleased;
 }
