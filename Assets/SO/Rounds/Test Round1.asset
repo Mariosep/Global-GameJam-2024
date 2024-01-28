@@ -18,7 +18,7 @@ MonoBehaviour:
   npcRatings: 
   playerRating: 2
   roundTime: 3
-  dialogData: {fileID: 11400000, guid: a0eab9161a7d9dd4f8adefaa6931c78f, type: 2}
+  dialogData: {fileID: 11400000, guid: e0a8c3c9d93a7cc409b43b3d09e227fa, type: 2}
   backgrounds:
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}
   - {fileID: 11400000, guid: f47031a72fb2bfd4d856fb6b6f1e2572, type: 2}

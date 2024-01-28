@@ -18,4 +18,4 @@ MonoBehaviour:
   postDecorPhaseDialog: {fileID: 7060817216078147841, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   preRatePhaseDialog: {fileID: 3625984702825912211, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
   ratePhaseDialog: {fileID: -1408062715504740508, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
-  postRatePhaseDialog: {fileID: 1682883436016886117, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}
+  postRatePhaseDialog: {fileID: -1408062715504740508, guid: c984be5f7b38d024eb30a680e52ef15a, type: 2}

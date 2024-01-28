@@ -8,6 +8,7 @@ public class RatePhase : Singleton<RatePhase>, IPhase
     public float waitAfterPlayerHasRated;
     public float waitAfterRatingShowed;
     public float waitAfterRatingHided;
+    public float waitPostPhase;
 
     private RoundController _roundController;
     private RoundData roundData => _roundController.roundData;
@@ -97,7 +98,15 @@ public class RatePhase : Singleton<RatePhase>, IPhase
     
     public IEnumerator PostPhase()
     {
-        yield return new WaitForSeconds(3f);
+        RoundChannel.onPostRatePhase?.Invoke();
+        
+        if(GameManager.Instance.roundIndex == 1)
+            NextRoundWaitingUI.Instance.ShowWaitingPanel();
+        
+        yield return new WaitForSeconds(waitPostPhase);
+        
+        if(GameManager.Instance.roundIndex == 1)
+            NextRoundWaitingUI.Instance.HideWaitingPanel();
         
         RoundChannel.onRatePhaseCompleted?.Invoke();
     }

@@ -20,9 +20,7 @@ public class DialogManager : MonoBehaviour
             RoundChannel.onDecorPhaseStarted += OnDecorPhaseStarted;
             RoundChannel.onPostDecorPhase += OnPostDecorPhase;
 
-            RoundChannel.onPreRatePhase += OnPreDecorPhase;
-            RoundChannel.onRatePhaseStarted += OnDecorPhaseStarted;
-            RoundChannel.onPostRatePhase += OnPostDecorPhase;
+            RoundChannel.onPostRatePhase += OnPostRatePhase;
         }
     }
 
@@ -35,9 +33,7 @@ public class DialogManager : MonoBehaviour
         RoundChannel.onDecorPhaseStarted -= OnDecorPhaseStarted;
         RoundChannel.onPostDecorPhase -= OnPostDecorPhase;
         
-        RoundChannel.onPreRatePhase -= OnPreDecorPhase;
-        RoundChannel.onRatePhaseStarted -= OnDecorPhaseStarted;
-        RoundChannel.onPostRatePhase -= OnPostDecorPhase;
+        RoundChannel.onPostRatePhase -= OnPostRatePhase;
     }
     
     private void OnWaitToStart()
@@ -69,7 +65,7 @@ public class DialogManager : MonoBehaviour
             DDEvents.onStartConversation?.Invoke(_dialogData.postDecorPhaseDialog);
     }
 
-    private void OnPreRatePhase()
+    /*private void OnPreRatePhase()
     {
         if (_dialogData.preRatePhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.preRatePhaseDialog);
@@ -79,7 +75,7 @@ public class DialogManager : MonoBehaviour
     {
         if (_dialogData.ratePhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.ratePhaseDialog);
-    }
+    }*/
     
     private void OnPostRatePhase()
     {
