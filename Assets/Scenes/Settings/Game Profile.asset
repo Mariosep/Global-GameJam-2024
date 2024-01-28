@@ -167,11 +167,11 @@ MonoBehaviour:
     overrideState: 1
     value: 0.16
   tapeNoiseOn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   tapeNoiseTH:
     overrideState: 1
-    value: 0.63
+    value: 0.445
   tapeNoiseAmount:
     overrideState: 1
     value: 1
@@ -203,8 +203,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   jitterVAmount:
-    overrideState: 0
-    value: 2.2
+    overrideState: 1
+    value: 0.12
   jitterVSpeed:
     overrideState: 0
     value: 1.13

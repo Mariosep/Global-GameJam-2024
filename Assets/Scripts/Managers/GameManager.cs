@@ -22,6 +22,11 @@ public class GameManager : Singleton<GameManager>
     {
         ServerChannel.onServerJoined -= StartGame;
     }
+    
+    public void OnCloseGame()
+    {
+        Application.Quit();
+    }
 
     private void Start()
     {
@@ -39,6 +44,7 @@ public class GameManager : Singleton<GameManager>
         
         roundController.onRoundCompleted += OnRoundCompleted;
     }
+
 
     private void StartNextRound()
     {
