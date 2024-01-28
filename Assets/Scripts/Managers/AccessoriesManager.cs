@@ -7,7 +7,7 @@ public class AccessoriesManager : Singleton<AccessoriesManager>
     
     private void Awake()
     {
-        RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
+        //RoundChannel.onDecorPhaseCompleted += OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted += OnRoundCompleted;
 
         _shelfController = GetComponent<ShelfController>();
@@ -15,7 +15,7 @@ public class AccessoriesManager : Singleton<AccessoriesManager>
     
     private void OnDestroy()
     {
-        RoundChannel.onDecorPhaseCompleted -= OnDecorPhaseCompleted;
+        //RoundChannel.onDecorPhaseCompleted -= OnDecorPhaseCompleted;
         RoundChannel.onRoundCompleted -= OnRoundCompleted;
     }
     
@@ -26,6 +26,11 @@ public class AccessoriesManager : Singleton<AccessoriesManager>
 
         shelf = Instantiate(shelfPrefab, transform).gameObject;
         _shelfController.ShowShelf();
+    }
+    
+    public void HideShelf()
+    {
+        _shelfController.HideShelf();
     }
     
     private void OnDecorPhaseCompleted()

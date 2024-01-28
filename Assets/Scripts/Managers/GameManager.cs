@@ -55,7 +55,7 @@ public class GameManager : Singleton<GameManager>
         
         WaitingToStartUI.Instance.HideWaitingPanel();
         
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         
         StartGame();
     }

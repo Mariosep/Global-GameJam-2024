@@ -14,7 +14,6 @@ public class DialogManager : MonoBehaviour
         if(!disableDialogs)
         {
             RoundChannel.onWaitToStart += OnWaitToStart;
-            
             RoundChannel.onRoundStarted += OnRoundStarted;
 
             RoundChannel.onPreDecorPhase += OnPreDecorPhase;
@@ -43,7 +42,7 @@ public class DialogManager : MonoBehaviour
     
     private void OnWaitToStart()
     {
-        if (waitToStartDialog)
+        if (waitToStartDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(waitToStartDialog);
     }
     
@@ -54,37 +53,37 @@ public class DialogManager : MonoBehaviour
     
     private void OnPreDecorPhase()
     {
-        if (_dialogData.preDecorPhaseDialog)
+        if (_dialogData.preDecorPhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.preDecorPhaseDialog);
     }
     
     private void OnDecorPhaseStarted()
     {
-        if (_dialogData.decorPhaseDialog)
+        if (_dialogData.decorPhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.decorPhaseDialog);
     }
     
     private void OnPostDecorPhase()
     {
-        if (_dialogData.postDecorPhaseDialog)
+        if (_dialogData.postDecorPhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.postDecorPhaseDialog);
     }
 
     private void OnPreRatePhase()
     {
-        if (_dialogData.preRatePhaseDialog)
+        if (_dialogData.preRatePhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.preRatePhaseDialog);
     }
     
     private void OnRateStarted()
     {
-        if (_dialogData.ratePhaseDialog)
+        if (_dialogData.ratePhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.ratePhaseDialog);
     }
     
     private void OnPostRatePhase()
     {
-        if (_dialogData.postRatePhaseDialog)
+        if (_dialogData.postRatePhaseDialog && waitToStartDialog.name != "None")
             DDEvents.onStartConversation?.Invoke(_dialogData.postRatePhaseDialog);
     }
 }

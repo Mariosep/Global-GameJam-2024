@@ -22,6 +22,7 @@ public class RatePhase : Singleton<RatePhase>, IPhase
     public IEnumerator PrePhase()
     {
         yield return new WaitForSeconds(3f);
+        
         ViewPortManager.Instance.HidePlayerResult();
 
         StartCoroutine(StartPhase());

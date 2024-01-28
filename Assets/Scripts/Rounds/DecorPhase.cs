@@ -77,8 +77,13 @@ public class DecorPhase : Singleton<DecorPhase>, IPhase
         RoundChannel.onPostDecorPhase?.Invoke();
         
         _currentRoundController.state = RoundState.PostDecor;
+
+        yield return new WaitForSeconds(3f);
+        
+        AccessoriesManager.Instance.HideShelf();
         
         yield return new WaitForSeconds(waitAfterDecorTimeEnded);
+        
         RoundChannel.onDecorPhaseCompleted?.Invoke();
     }
 }
