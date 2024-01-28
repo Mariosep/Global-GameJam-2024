@@ -88,6 +88,7 @@ public class GameManager : Singleton<GameManager>
         else
         {
             Debug.Log("The End");
+            RoundChannel.onEndGame?.Invoke();
         }
     }
 }

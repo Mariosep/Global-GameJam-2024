@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 3614349424358421941, guid: d4f74e8c54b100e4bb54836fccd06837, type: 3}
   npcRatings: 02000000030000000100000001000000
   playerRating: 0
-  roundTime: 30
+  roundTime: 2
   dialogData: {fileID: 0}
   backgrounds:
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}

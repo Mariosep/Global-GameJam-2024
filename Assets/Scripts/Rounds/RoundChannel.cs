@@ -15,6 +15,7 @@ public static class RoundChannel
     public static Action onRatePhaseCompleted;
     
     public static Action onBaseImageShowed;
+    public static Action onEndGame;
 }
 
 public static class ServerChannel

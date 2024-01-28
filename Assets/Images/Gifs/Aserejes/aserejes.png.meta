@@ -1,0 +1,1975 @@
+fileFormatVersion: 2
+guid: 84eb2a3253da6bb4f8c72ceba2ec5f3e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aserejes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531de99d76d95c9428ec4053485cad01
+      internalID: 485631912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe981e3c9be4014482b884c5c1512cf
+      internalID: -622260056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_2
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd73047a1b17664aac5c9a3b06374d8
+      internalID: -61820585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_3
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6923b5bbdbd739b4995c26efe27a44c8
+      internalID: -2047655064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_4
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e373796203303664b8a06de5694e14dc
+      internalID: 1911808903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_5
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e06db4e246f4540b0cf1c806d6108d
+      internalID: -541686573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_6
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1364
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a04302df44df084abc216b45adbdfc5
+      internalID: 1136724697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bfa6dc46703994bb96229bbb88f6fe
+      internalID: 1729205202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_8
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acac0f6c7541984187c341d6ed016af
+      internalID: -715742521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3d3648413f14d4aac4d72925965886
+      internalID: 1037995515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_10
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559a1139d3be01b40b2c11058af8f80d
+      internalID: 560417908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_11
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21cd91a5634d249bcc4b5b61c98843
+      internalID: 1207708999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_12
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c7259af3d86b54e8c9ab0015b52b07
+      internalID: 1107904000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_13
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1240
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2fc36a9d590e04fbfa4e3adc86d91d
+      internalID: -598987766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ccc368d4834f44382d7c24d1004484
+      internalID: -501027883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_15
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd93a2f36fc5244bdb3c979c3eccff
+      internalID: -2076149363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_16
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f9170d671e01543bb30ecc8881935d
+      internalID: -2144226988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_17
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf120f06c4ad9444a1f0d0203e2e7d5
+      internalID: -1549249851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_18
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6addf2d49d4556489fbd059136ac0bb
+      internalID: -969095647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_19
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527f87d6154ddee4e8f9bdee718f89f4
+      internalID: -1059867919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_20
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1116
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451f2e49ab179634d9f93a7e2508e0e9
+      internalID: -1866031379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd6ae103950b234abad3f95248a027d
+      internalID: 1455330623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_22
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38460e423178c7e4da1dd63bc5ff6518
+      internalID: 67775913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_23
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85ad64b52aaa5f45994ed392a1b1688
+      internalID: 1758596276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_24
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1b172789dcd7b49888b6f411936fc1
+      internalID: 1524402489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_25
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43c29fa6315a194f92b51d4fef817eb
+      internalID: 1693507894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_26
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5142a6be1536d4f8a3553da75f2cf4
+      internalID: -670812893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_27
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 992
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f04c68f191112c4b945097751fcdff0
+      internalID: -1873605088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16d3ba7d9137d74599f349a940dced6
+      internalID: -1815862901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_29
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eab688f15f83fc46a741186428e8c83
+      internalID: -1300643888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_30
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2f45e2fb7361544a26034b07b8030c
+      internalID: -1521661361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_31
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f08f53a3375534a8389ca3534f84c1
+      internalID: -1957456875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_32
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a49311d7136d148a5e51f40faf4ce9
+      internalID: 38485718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_33
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4fd10cba920da4f985453596ca8015
+      internalID: 85675461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_34
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 868
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580a7c1d6ce68004498a7af31e3436ba
+      internalID: -151837214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360b280dc273d734b8e1467495ac8609
+      internalID: -118968051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cda670433cb52743b8d9ce934c4fe02
+      internalID: -1807215273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_37
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b3847cb956552418e81b3d434cf128
+      internalID: 1321387319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_38
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9880587fd04f7cc41b713f5f691166e4
+      internalID: 1318250115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_39
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e359cfbd4727f24889607219af47c0c
+      internalID: -942846357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_40
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c5b17a87fc3c4880de5b0e26c4175
+      internalID: -1136917663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_41
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 744
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8aac54b21d8854fb579141cd806371
+      internalID: -630319522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac77e84c54a0c34995a3a074a725ad9
+      internalID: -1851704209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_43
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fad5d89cbe97034fbec9aa92a84bb46
+      internalID: 1457158160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_44
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47a0ce31f916de47904057e79ba9914
+      internalID: -1707505583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_45
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9e90b38e16ed94686f4fae932397bb
+      internalID: 1731378079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_46
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e58fcd338e3f64facbf52a6de9a85c
+      internalID: 354832823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_47
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a17f8a28226b48a22acbc06ec913c
+      internalID: 1758805135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_48
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 620
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a30178acc38394ebafd41667933cec
+      internalID: 1260885698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffc6a727e0533f49ad6e745e6f18d0b
+      internalID: -1983503726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_50
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d773a06d424024494c6af9ba1c3aaf
+      internalID: 885959498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_51
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1832d5fe5dd5fc48b456034fa970d6e
+      internalID: 1286293938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_52
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b9c6bf747dc0445a1d1b6254a1d6ee
+      internalID: 1512751866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_53
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fea4c525511fc46a2364d01124ca7d
+      internalID: 623423043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_54
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1295e3e7e4fd05e46931881b6bb46d99
+      internalID: -218300693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_55
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 496
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fc11ddf8d23e34faea115569944ad2
+      internalID: -965448725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1642d43ce3fbf46987b5fc3316f456
+      internalID: 1107052962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_57
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4e53a9e3f8f2d449165ebd3e28e08e
+      internalID: 304553189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_58
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0b76e6bdcd92543aa02a0ca8aaa95c
+      internalID: 318167584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_59
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305025efb6073aa4c8b1db0848812f5b
+      internalID: 1515640852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_60
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994be317d9567db4d89a1c25d5b20d87
+      internalID: -401588436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_61
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbd78f9359233141ad787975fd5c85d
+      internalID: -193575574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_62
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 372
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b98b57cf2a13645989904fb906cbd0
+      internalID: -306776490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bdbcfa747b1fc4687844eb39b3cab3
+      internalID: -1700986252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_64
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f28c92db0a3077428d6272614318503
+      internalID: 1601176269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_65
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60ffae1c6b186347b83375cb9912b72
+      internalID: 336502219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_66
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd3da57d8564c4882175f9bd5ee1a6
+      internalID: 97817905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_67
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b5ae74225b7344094ead2e3fb7c528
+      internalID: 942615143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_68
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1590e49a311434992ece61f5dedaa8
+      internalID: -1604474848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_69
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 248
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f23adca7cd5e8043880fc56efdcbcb9
+      internalID: 421087363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1161a8cdf43002541a314643d6cde5ac
+      internalID: 874329378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_71
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb0409c9bd8fea4098436df4ad72cf0
+      internalID: -471702479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_72
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c856524696dbd47bc7c69a79d1637b
+      internalID: -849362903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_73
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e900fe0559982b42bf5dc3078194540
+      internalID: -1766766119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_74
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df94b2c31bfb34b4aa277d90ceb34380
+      internalID: 322589974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_75
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97df76baac03ac54f840f7dd65048269
+      internalID: 486735594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_76
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 124
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542e138f08b101d40a0075287a9c2a26
+      internalID: -1293538322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a29b278274d6c46b88716308417622
+      internalID: -1850419621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_78
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e44c632ea8eaf46ae875830d63ed88
+      internalID: -1695521951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_79
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad378b03051b0645ac86374b36f59d7
+      internalID: -701276220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_80
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3c9e55bee461347a6dcb0b2ec28127
+      internalID: -1574153801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_81
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4589ef5892229e24b9c10b3905d73e27
+      internalID: 1970161210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_82
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439038ce1736e1140bfb531fb5938741
+      internalID: 1382059702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aserejes_83
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 0
+        width: 241
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484dafab09eb82d48b8b0a568d68163d
+      internalID: 1291411108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      aserejes_0: 485631912
+      aserejes_1: -622260056
+      aserejes_10: 560417908
+      aserejes_11: 1207708999
+      aserejes_12: 1107904000
+      aserejes_13: -598987766
+      aserejes_14: -501027883
+      aserejes_15: -2076149363
+      aserejes_16: -2144226988
+      aserejes_17: -1549249851
+      aserejes_18: -969095647
+      aserejes_19: -1059867919
+      aserejes_2: -61820585
+      aserejes_20: -1866031379
+      aserejes_21: 1455330623
+      aserejes_22: 67775913
+      aserejes_23: 1758596276
+      aserejes_24: 1524402489
+      aserejes_25: 1693507894
+      aserejes_26: -670812893
+      aserejes_27: -1873605088
+      aserejes_28: -1815862901
+      aserejes_29: -1300643888
+      aserejes_3: -2047655064
+      aserejes_30: -1521661361
+      aserejes_31: -1957456875
+      aserejes_32: 38485718
+      aserejes_33: 85675461
+      aserejes_34: -151837214
+      aserejes_35: -118968051
+      aserejes_36: -1807215273
+      aserejes_37: 1321387319
+      aserejes_38: 1318250115
+      aserejes_39: -942846357
+      aserejes_4: 1911808903
+      aserejes_40: -1136917663
+      aserejes_41: -630319522
+      aserejes_42: -1851704209
+      aserejes_43: 1457158160
+      aserejes_44: -1707505583
+      aserejes_45: 1731378079
+      aserejes_46: 354832823
+      aserejes_47: 1758805135
+      aserejes_48: 1260885698
+      aserejes_49: -1983503726
+      aserejes_5: -541686573
+      aserejes_50: 885959498
+      aserejes_51: 1286293938
+      aserejes_52: 1512751866
+      aserejes_53: 623423043
+      aserejes_54: -218300693
+      aserejes_55: -965448725
+      aserejes_56: 1107052962
+      aserejes_57: 304553189
+      aserejes_58: 318167584
+      aserejes_59: 1515640852
+      aserejes_6: 1136724697
+      aserejes_60: -401588436
+      aserejes_61: -193575574
+      aserejes_62: -306776490
+      aserejes_63: -1700986252
+      aserejes_64: 1601176269
+      aserejes_65: 336502219
+      aserejes_66: 97817905
+      aserejes_67: 942615143
+      aserejes_68: -1604474848
+      aserejes_69: 421087363
+      aserejes_7: 1729205202
+      aserejes_70: 874329378
+      aserejes_71: -471702479
+      aserejes_72: -849362903
+      aserejes_73: -1766766119
+      aserejes_74: 322589974
+      aserejes_75: 486735594
+      aserejes_76: -1293538322
+      aserejes_77: -1850419621
+      aserejes_78: -1695521951
+      aserejes_79: -701276220
+      aserejes_8: -715742521
+      aserejes_80: -1574153801
+      aserejes_81: 1970161210
+      aserejes_82: 1382059702
+      aserejes_83: 1291411108
+      aserejes_9: 1037995515
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

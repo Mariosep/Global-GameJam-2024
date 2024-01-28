@@ -149,7 +149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3188928045406720538
 RectTransform:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ PositionConstraint:
   serializedVersion: 2
   m_Weight: 1
   m_TranslationAtRest: {x: 0, y: 0, z: 0.0009765625}
-  m_TranslationOffset: {x: 2.3588257, y: -172.59998, z: 9720}
+  m_TranslationOffset: {x: 2.3588, y: -172.6, z: 9720}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
@@ -784,7 +784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3261551352923389893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1503,7 +1503,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281225203
+    rgba: 2150518771
   m_fontColor: {r: 0.9529412, g: 0.30980393, b: 0.18039216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1613,7 +1613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8454589716529148149
 RectTransform:
   m_ObjectHideFlags: 0
