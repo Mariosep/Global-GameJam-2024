@@ -5,11 +5,35 @@ public class GameManager : Singleton<GameManager>
 {
     public List<RoundData> rounds;
 
+    public GameObject serverUI;
+    public GameObject appUI;
+    
     public int roundIndex = 0;
     public RoundController roundController;
+
+    public bool startGameOnPlay;
     
+    private void Awake()
+    {
+        ServerChannel.onServerJoined += StartGame;
+    }
+
+    private void OnDestroy()
+    {
+        ServerChannel.onServerJoined -= StartGame;
+    }
+
     private void Start()
     {
+        if(startGameOnPlay)
+            StartGame();
+    }
+
+    private void StartGame()
+    {
+        serverUI.SetActive(false);
+        appUI.SetActive(true);
+        
         roundIndex = 0;
         StartNextRound();
         

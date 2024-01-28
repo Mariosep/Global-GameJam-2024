@@ -54,6 +54,7 @@ public class JoiningController : MonoBehaviour
         yield return new WaitForSeconds(rnd.Next(5,10));
         
         //TODO adding invoke event to start the server
+        ServerChannel.onServerJoined?.Invoke();
         
         CloseModal();
     }

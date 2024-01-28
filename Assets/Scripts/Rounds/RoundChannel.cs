@@ -15,3 +15,8 @@ public static class RoundChannel
     
     public static Action onBaseImageShowed;
 }
+
+public static class ServerChannel
+{
+    public static Action onServerJoined;
+}
