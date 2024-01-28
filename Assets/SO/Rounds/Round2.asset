@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shelfPrefab: {fileID: 2861234333370394245, guid: 48b542d541b6a6643a7b51239813013f, type: 3}
   baseImagePrefab: {fileID: 6416983265230716710, guid: 2ce2954c0e5d41d409db77b8efd3995d, type: 3}
-  npcResults: []
+  npcResults:
+  - {fileID: 1934664338888697001, guid: 6e173f08221744a4793d49546d24f973, type: 3}
+  - {fileID: 3718373299177956450, guid: 2082decf3e05f3a43b24dfb818dda7ff, type: 3}
+  - {fileID: 3614349424358421941, guid: d4f74e8c54b100e4bb54836fccd06837, type: 3}
+  npcRatings: 02000000030000000100000001000000
+  playerRating: 0
   roundTime: 30
   dialogData: {fileID: 0}
   backgrounds:

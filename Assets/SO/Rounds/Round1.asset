@@ -15,14 +15,15 @@ MonoBehaviour:
   shelfPrefab: {fileID: 2861234333370394245, guid: 48b542d541b6a6643a7b51239813013f, type: 3}
   baseImagePrefab: {fileID: 8372191055008664806, guid: dcb9b1c6dc7e00b418f80de29678711c, type: 3}
   npcResults:
-  - {fileID: 8813370805979804429, guid: 3bda04e6e6724ab4f8e68db9701e1c90, type: 3}
-  - {fileID: 563784571525429423, guid: 4a1ee2b117ace95469ad7065eee428c4, type: 3}
-  - {fileID: 8813370805979804429, guid: 3bda04e6e6724ab4f8e68db9701e1c90, type: 3}
-  npcRatings: 020000000300000001000000
+  - {fileID: 905680858346422624, guid: c4390d0b992208242867ab2f3cadd012, type: 3}
+  - {fileID: 4887206439918538705, guid: 82df431e4601e6042b77f9fb55be1bda, type: 3}
+  - {fileID: 2489925238387907045, guid: 08107cfd27649014f9f2cd44b2dc1035, type: 3}
+  npcRatings: 02000000030000000100000002000000
   playerRating: 2
-  roundTime: 30
+  roundTime: 2
   dialogData: {fileID: 11400000, guid: a0eab9161a7d9dd4f8adefaa6931c78f, type: 2}
   backgrounds:
-  - {fileID: 11400000, guid: 5926cbc2be3ede04fbc68832d576f478, type: 2}
   - {fileID: 11400000, guid: 2a4add40e6cea9748a3ad9e7969e1d95, type: 2}
+  - {fileID: 11400000, guid: f47031a72fb2bfd4d856fb6b6f1e2572, type: 2}
+  - {fileID: 11400000, guid: 5fcebff857b95664886bb29e688a0470, type: 2}
   - {fileID: 11400000, guid: f020814cca818684dae26b81fa06b7c1, type: 2}

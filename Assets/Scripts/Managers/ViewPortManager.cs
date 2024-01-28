@@ -1,7 +1,8 @@
-using AQM.Tools;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 public class ViewPortManager : Singleton<ViewPortManager>
 {
@@ -10,8 +11,8 @@ public class ViewPortManager : Singleton<ViewPortManager>
     public RectTransform npcResultContainer;
 
     public TextMeshProUGUI usernameText;
-    
-    public Transform accessoriesContainer;
+
+    public float maxHorizontalDistance = 10f;
     
     private Bounds viewPortBounds;
     
@@ -25,6 +26,7 @@ public class ViewPortManager : Singleton<ViewPortManager>
         var viewPortImage = viewFrame.GetComponent<Image>();
         viewPortBounds = viewPortImage.sprite.bounds;
         
+        InteractionChannel.onImageGrabbed += OnImageGrabbed;
         InteractionChannel.onImageReleased += OnImageReleased;
         
         HideUsername();
@@ -32,9 +34,15 @@ public class ViewPortManager : Singleton<ViewPortManager>
 
     private void OnDisable()
     {
+        InteractionChannel.onImageGrabbed -= OnImageGrabbed;
         InteractionChannel.onImageReleased -= OnImageReleased;
     }
 
+    private void OnImageGrabbed(Movable imageGrabbed)
+    {
+        imageGrabbed.transform.SetParent(AccessoriesManager.Instance.shelf.transform);
+    }
+    
     private void OnImageReleased(Movable imageReleased)
     {
         Bounds imageReleasedBounds = imageReleased.GetComponent<Image>().sprite.bounds;
@@ -47,10 +55,16 @@ public class ViewPortManager : Singleton<ViewPortManager>
         }
         else
         {
-            imageReleased.transform.SetParent(accessoriesContainer);
+            imageReleased.transform.SetParent(AccessoriesManager.Instance.shelf.transform);
         }
     }
 
+    bool ImageIsInside(Vector3 imagePosition)
+    {
+        var horizontalDistance =  Math.Abs(imagePosition.x - playerResultContainer.position.x);
+        return horizontalDistance < maxHorizontalDistance;
+    }
+    
     public void InstantiateBaseImage(GameObject baseImagePrefab)
     {
         _baseImage = Instantiate(baseImagePrefab, playerResultContainer);
@@ -99,10 +113,5 @@ public class ViewPortManager : Singleton<ViewPortManager>
     private void OnRoundCompleted(RoundController roundControllerCompleted)
     {
         
-    }
-    
-    bool ImageIsInside(Vector3 imagePosition)
-    {
-        return playerResultContainer.rect.Contains(imagePosition);
     }
 }

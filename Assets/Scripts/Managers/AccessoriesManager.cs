@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class AccessoriesManager : Singleton<AccessoriesManager>
 {
-    public Transform accessoriesContainer;
-
-    private GameObject _shelf;
+    public GameObject shelf;
     private ShelfController _shelfController;
     
     private void Awake()
@@ -23,10 +21,10 @@ public class AccessoriesManager : Singleton<AccessoriesManager>
     
     public void ShowShelf(GameObject shelfPrefab)
     {
-        if(_shelf != null)
-            Destroy(_shelf);
+        if(shelf != null)
+            Destroy(shelf);
 
-        _shelf = Instantiate(shelfPrefab, transform).gameObject;
+        shelf = Instantiate(shelfPrefab, transform).gameObject;
         _shelfController.ShowShelf();
     }
     

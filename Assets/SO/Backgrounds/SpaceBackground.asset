@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Space Background
   bg: {fileID: 21300000, guid: 0fe7d13c2e7c6d046ada419ede32e994, type: 3}
-  left: 40.72
-  top: -16
-  right: 116.72
-  bottom: 16
+  left: -370.505
+  top: -299.885
+  right: -210.505
+  bottom: -515.885
   scale: {x: 1.4871598, y: 1.11024, z: 2.1556797}
