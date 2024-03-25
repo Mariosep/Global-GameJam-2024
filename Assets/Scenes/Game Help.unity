@@ -472,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4777101514182228936, guid: a88883b49da917841b9eb964c4c819fa, type: 3}
       propertyPath: disableDialogs
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1711,7 +1711,7 @@ PrefabInstance:
       objectReference: {fileID: 1579961414}
     - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
       propertyPath: waitToStart
-      value: 35
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 913420204196997379, guid: 2ea498504f083264f81e5f6f52063789, type: 3}
       propertyPath: startGameOnPlay
@@ -2645,6 +2645,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 491486152}
     m_Modifications:
+    - target: {fileID: 88776312940309436, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 689986472758339466, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2731,6 +2735,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8698398151735991436, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698398151735991436, guid: dbf477138bc5b1c4fbe0253a8a6c811a, type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
