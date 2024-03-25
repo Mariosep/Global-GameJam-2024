@@ -470,10 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog Controller
       objectReference: {fileID: 0}
-    - target: {fileID: 4777101514182228936, guid: a88883b49da917841b9eb964c4c819fa, type: 3}
-      propertyPath: disableDialogs
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 2785063328848362200, guid: a88883b49da917841b9eb964c4c819fa, type: 3}
+      propertyPath: dialogSystemDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 389662c6292e2de4998f6644684d817a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
